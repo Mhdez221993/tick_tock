@@ -1,0 +1,1292 @@
+@import "./styles/App.scss";
+@import "./styles/DiscardModal.scss";
+@import "./styles/Dropdown.scss";
+@import "./styles/fonts.scss";
+@import "./styles/FeedItem.scss";
+@import "./styles/Modal.scss";
+@import "./styles/SearchResults.scss";
+@import "./styles/Sidebar.scss";
+@import "./styles/LogIn.scss";
+@import "./styles/NotFound.scss";
+@import "./styles/Profile.scss";
+@import "./styles/SignUp.scss";
+@import "./styles/VideoPost.scss";
+@import "./styles/Upload.scss";
+
+// pages/Feed.js
+.feed-container {
+  @extend .main-body;
+  @extend .page-with-header;
+  @extend .middle;
+  @extend .em-follow;
+}
+
+.feed-item-container {
+  @extend .jsx-1648041292;
+  @extend .trending-container;
+}
+
+.feed-item-inner {
+  @extend .jsx-1860510881;
+  @extend .video-feed-container;
+}
+
+// pages/NotFound.js
+.not-found-container {
+  @extend .jsx-1973985703;
+  @extend .error-page;
+  @extend .net-error;
+}
+
+.not-found-inner {
+  @extend .jsx-1973985703;
+}
+
+.not-found-title {
+  @extend .jsx-1973985703;
+  @extend .title;
+}
+
+.not-found-description {
+  @extend .jsx-1973985703;
+  @extend .desc;
+}
+
+// pages/LogIn.js
+.login-container {
+  @extend .tiktok-app-container-12zKy;
+}
+
+.login-header {
+  @extend .tiktok-web-header-13pzv;
+  @extend .no-title-2H3Hq;
+  @extend .is-modal-3Rj9l;
+}
+
+.login-wrapper {
+  @extend .tiktok-web-body-33PDi;
+  @extend .tiktok-web-body-modal-2N5Wt;
+}
+
+.login-title-container {
+  @extend .login-title-container-MsJ7l;
+}
+
+.login-title {
+  @extend .login-title-1FcQm;
+}
+
+.login-option-wrapper {
+  @extend .channel-item-wrapper-2gBWB;
+}
+
+.login-option-icon-wrapper {
+  @extend .channel-icon-wrapper-2eYxZ;
+}
+
+.login-option-icon {
+  @extend .channel-icon-33qGs;
+}
+
+.login-option-text {
+  @extend .channel-name-2qzLW;
+}
+
+.login-options {
+  @extend .social-container-NE2xk;
+}
+
+.login-options-container {
+  @extend .login-container-4HZX-;
+  @extend .modal-container-fsYki;
+  max-height: calc((100vh - 100px) - 60px);
+}
+
+// components/DiscardModal.js
+.discard-modal-container {
+  @extend .modal;
+}
+
+.discard-modal-title-container {
+  @extend .jsx-1801464094;
+  @extend .modal-title-container;
+}
+
+.discard-modal-title {
+  @extend .jsx-1801464094;
+  @extend .modal-title;
+}
+
+.discard-modal-subtitle {
+  @extend .jsx-1801464094;
+  @extend .modal-sub-title;
+}
+
+.discard-modal-confirm {
+  @extend .jsx-1801464094;
+  @extend .modal-btn;
+  @extend .emphasis;
+}
+
+.discard-modal-discard {
+  @extend .jsx-1801464094;
+  @extend .modal-btn;
+}
+
+//components/DraftEditor.js
+.editor-container {
+  @extend .jsx-2004129124;
+  @extend .container;
+}
+
+.editor-wrapper {
+  @extend .jsx-2004129124;
+  @extend .editor;
+}
+
+.editor-inner {
+  @extend .jsx-2004129124;
+  @extend .editor;
+}
+
+.editor-mention-button {
+  @extend .jsx-2004129124;
+  @extend .icon-style;
+  @extend .at;
+}
+
+.editor-mention-icon {
+  @extend .jsx-2004129124;
+}
+
+.editor-hashtag-button {
+  @extend .jsx-2004129124;
+  @extend .icon-style;
+  @extend .hash;
+}
+
+.editor-hashtag-icon {
+  @extend .jsx-2004129124;
+}
+
+// components/Header.js
+.h-container {
+  @extend .jsx-1925343495;
+  @extend .header-container;
+  @extend .white !optional;
+  @extend .middle;
+}
+
+.h-content {
+  @extend .jsx-1925343495;
+  @extend .header-content;
+}
+
+.h-wrapper {
+  @extend .jsx-1925343495;
+  @extend .hamburger-wrapper;
+}
+
+.h-link {
+  @extend .jsx-3359950850;
+  @extend .logo-link;
+}
+
+.h-icon {
+  @extend .jsx-3359950850;
+  @extend .logo-icon;
+}
+
+.h-menu-right {
+  @extend .jsx-2365341634 !optional;
+  @extend .menu-right !optional;
+}
+
+.h-menu-upload {
+  @extend .jsx-4204294043 !optional;
+  @extend .upload-wrapper !optional;
+}
+
+.h-avatar-container {
+  @extend .jsx-2570553545 !optional;
+  @extend .icon-wrap !optional;
+  @extend .avatar !optional;
+}
+
+.h-avatar {
+  @extend .tiktok-avatar !optional;
+  @extend .tiktok-avatar-circle !optional;
+  width: 32px;
+  height: 32px;
+}
+
+// components/FollowButton.js
+.fb-container {
+  @extend .jsx-1253735330;
+  @extend .item-follow-wrapper;
+}
+
+.fb-wrapper {
+  @extend .follow-button-wrap;
+  @extend .button;
+}
+
+.ufb {
+  @extend .follow-button;
+  @extend .jsx-551524688;
+  @extend .tiktok-btn-pc;
+  @extend .tiktok-btn-pc-medium;
+  @extend .tiktok-btn-pc-line;
+}
+
+.fb {
+  @extend .follow-button;
+  @extend .jsx-551524688;
+  @extend .tiktok-btn-pc;
+  @extend .tiktok-btn-pc-medium;
+  @extend .tiktok-btn-pc-line;
+}
+
+// components/LikeButton.js
+.like-button,
+.messages-button {
+  @extend .jsx-1961852495;
+  @extend .bar-item-wrapper;
+  display: flex;
+  align-items: center;
+}
+
+.like-button-count,
+.messages-button-count {
+  @extend .bar-item-text;
+  @extend .engagement-text-v23;
+  @extend .jsx-18968439;
+  padding-top: 2px;
+}
+
+// components/MessagesButton.js
+// .m-link {
+//   @extend .jsx-1961852495;
+//   @extend .bar-item-wrapper;
+// }
+
+// .m-count {
+//   @extend .bar-item-text;
+//   @extend .engagement-text-v23;
+//   @extend .jsx-18968439;
+// }
+
+// components/Sidebar.js
+.sb-container {
+  @extend .tiktok-r0hg2a-DivSideNavContainer !optional;
+  @extend .e1mw2lkl1 !optional;
+}
+
+.sb-wrapper {
+  @extend .tiktok-1tgrt5d-DivSideNavContainer !optional;
+  @extend .e1ou859n1 !optional;
+}
+
+.sb-inner {
+  @extend .tiktok-pgynkg-DivWrapper !optional;
+  @extend .e1ou859n2 !optional;
+}
+
+.sb-links-container {
+  @extend .tiktok-2wq5nm-DivMainNavContainer !optional;
+  @extend .e1ou859n8 !optional;
+}
+
+.sb-links-wrapper {
+  @extend .tiktok-ajitim-StyledTmpLink !optional;
+  @extend .e1ou859n5 !optional;
+}
+
+.sb-links-text {
+  color: rgba(22, 24, 35, 1);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 8px;
+}
+.sb-links-text.active {
+  color: rgba(254, 44, 85, 1);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 991px) {
+  .sb-links-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sb-links-text {
+    display: none;
+  }
+}
+
+.sb-suggested {
+  @extend .tiktok-n370wx-DivUserContainer !optional;
+  @extend .e9kjvyg0 !optional;
+}
+
+.sb-suggested-title {
+  @extend .tiktok-d5918w-PTitle;
+  @extend .e9kjvyg2 !optional;
+}
+
+.sb-suggested-list {
+  @extend .tiktok-kwqs83-DivUserLinkContainer !optional;
+  @extend .ezgrmuk0 !optional;
+  flex-direction: column !important;
+  align-items: start !important;
+}
+
+.sb-item-link {
+  display: flex;
+  width: 100%;
+  padding: 8px 0;
+  text-decoration: none !important;
+}
+
+.sb-item-link:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.sb-item-link:active {
+  background: rgba(22, 24, 35, 0.06);
+}
+
+.sb-item-avatar-container {
+  @extend .ezgrmuk2 !optional;
+  @extend .tiktok-1nmvph8-DivContainer-StyledUserAvatar !optional;
+  @extend .evbpgs51 !optional;
+  width: 32px;
+  height: 32px;
+}
+
+.sb-item-avatar-wrapper {
+  @extend .evbpgs52 !optional;
+  @extend .tiktok-gigx3u-SpanAvatarContainer-StyledAvatar !optional;
+  @extend .e1e9er4e0 !optional;
+  width: 32px;
+  height: 32px;
+}
+
+.sb-item-avatar {
+  @extend .tiktok-1zpj2q-ImgAvatar !optional;
+  @extend .e1e9er4e1 !optional;
+}
+
+.sb-item-info {
+  @extend .tiktok-1e4xwpk-StyledUserContentLink !optional;
+  @extend .ezgrmuk4 !optional;
+}
+
+.sb-item-username-wrapper {
+  @extend .tiktok-yt7cul-DivUserTitleWrapper !optional;
+  @extend .ezgrmuk6 !optional;
+}
+
+.sb-item-username {
+  @extend .tiktok-arsb3q-H4UserTitle !optional;
+  @extend .ezgrmuk7 !optional;
+}
+
+.sb-item-displayName {
+  @extend .tiktok-1f4lmy9-PUserDesc !optional;
+  @extend .ezgrmuk9 !optional;
+}
+
+// components/ShareButton.js
+.share-button {
+  @extend .jsx-1961852495;
+  @extend .bar-item-wrapper;
+}
+
+// components/SuccessModal.js
+.success-modal-container {
+  @extend .modal;
+}
+
+.success-modal-title-container {
+  @extend .jsx-1801464094;
+  @extend .modal-title-container;
+}
+
+.success-modal-title {
+  @extend .jsx-1801464094;
+  @extend .modal-title;
+}
+
+.success-modal-subtitle {
+  @extend .jsx-1801464094;
+  @extend .modal-sub-title;
+}
+
+.success-modal-confirm {
+  @extend .jsx-1801464094;
+  @extend .modal-btn;
+  @extend .emphasis;
+}
+
+.success-modal-discard {
+  @extend .jsx-1801464094;
+  @extend .modal-btn;
+}
+
+// components/SearchBar.js
+.searchbar-container {
+  @extend .jsx-1785357321;
+  @extend .search-container;
+}
+
+.searchbar-form {
+  @extend .jsx-3301777038;
+  @extend .search-input;
+}
+
+.searchbar-input {
+  @extend .jsx-3301777038;
+}
+
+.searchbar-border {
+  @extend .jsx-3301777038;
+  @extend .split;
+}
+
+.searchbar-icon {
+  @extend .jsx-3301777038;
+  @extend .search-button-container;
+}
+
+// components/SearchResults.js
+.search-results-container {
+  @extend .jsx-3629737056;
+  @extend .sug-container;
+}
+
+.search-results-title {
+  @extend .jsx-3629737056;
+  @extend .sug-account-group-title;
+}
+
+.search-results-all-container {
+  @extend .jsx-4254079686;
+  @extend .sug-more;
+}
+
+.search-results-all {
+  @extend .jsx-4254079686;
+}
+
+.search-result-item {
+  @extend .jsx-3368595498;
+  @extend .sug-item;
+}
+
+.search-result-item-avatar {
+  @extend .tiktok-avatar;
+  // @extend .tiktok-avatar-circle;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.search-result-item-content {
+  @extend .jsx-3368595498;
+  @extend .sug-item-content;
+}
+
+// components/Dropdown.js
+.dd-container {
+  @extend .jsx-1578783174;
+  @extend .popup;
+  @extend .actions-enter-done;
+}
+
+.dd-wrapper {
+  @extend .jsx-2570553545;
+  @extend .header-setting-wrap;
+}
+
+.dd-arrow {
+  @extend .jsx-1578783174;
+  @extend .content-wrap-arrow;
+}
+
+.dd-option-container {
+  @extend .jsx-2570553545;
+}
+
+.dd-option-border {
+  @extend .jsx-2570553545;
+  @extend .logout-line;
+}
+
+.dd-option {
+  @extend .jsx-2570553545;
+  @extend .option;
+}
+
+// components/PauseButton.js
+.pause-button {
+  @extend .jsx-3143759217;
+  @extend .toggle-icon;
+  @extend .toggle-icon-v4;
+  @extend .higher;
+  left: 12px !important;
+  bottom: 12px !important;
+}
+
+// components/MuteButton.js
+.mute-button {
+  @extend .jsx-858351972;
+  @extend .volume-wrapper-column;
+}
+
+.mute-button-inner {
+  @extend .jsx-858351972;
+  @extend .mute-icon;
+  @extend .one_column;
+  @extend .jsx-1594372409;
+  @extend .mute-icon;
+  @extend .show-mute;
+  left: 16px !important;
+  top: 16px !important;
+}
+
+// components/FeedItem.js
+
+.fi-container {
+  @extend .jsx-1253735330 !optional;
+  @extend .jsx-2715883145 !optional;
+  @extend .video-feed-item;
+  @extend .em-follow;
+  width: 692px;
+  max-width: 692px;
+}
+
+.fi-avatar-link {
+  @extend .user-avatar;
+  @extend .feed-item-avatar;
+  @extend .jsx-872204369;
+}
+
+.fi-avatar {
+  @extend .tiktok-avatar;
+  @extend .tiktok-avatar-circle !optional;
+  @extend .avatar;
+  @extend .jsx-3659161049;
+  cursor: unset;
+  width: 56px;
+  height: 56px;
+}
+
+.fi-username {
+  @extend .author-uniqueId;
+  @extend .jsx-1959324491;
+  text-decoration: none;
+}
+
+.fi-displayName {
+  @extend .author-nickname;
+  @extend .jsx-1959324491;
+}
+
+.fi-caption {
+  @extend .tt-video-meta-caption;
+  @extend .jsx-1385049866;
+  @extend .jsx-3687787556;
+}
+
+.fi-music-container {
+  @extend .jsx-3169958153;
+  @extend .tt-video-music;
+  @extend .item-music-info-V4;
+  @extend .jsx-854321451;
+  @extend .black;
+}
+
+.fi-music {
+  @extend .jsx-3169958153;
+  @extend .video-music-content;
+  @extend .pause;
+  @extend .music-title-decoration;
+}
+
+.fi-info {
+  @extend .jsx-1253735330;
+  @extend .jsx-2715883145 !optional;
+  @extend .feed-item-content;
+}
+
+.fi-author {
+  @extend .jsx-442964640;
+  @extend .author-info-content;
+  @extend .tt-author-info;
+  @extend .jsx-1385049866;
+  @extend .jsx-1959324491;
+  @extend .horizontal;
+}
+
+.fiv-container {
+  @extend .jsx-1253735330;
+  @extend .jsx-2715883145 !optional;
+  @extend .item-video-container;
+}
+
+.fiv-wrapper {
+  @extend .jsx-1253735330;
+  @extend .jsx-2715883145 !optional;
+  width: calc(0.56 * (450px + ((100vw - 768px) / 1152) * 100));
+  height: calc(450px + ((100vw - 768px) / 1152) * 100);
+  position: relative;
+}
+
+.fiv-video {
+  @extend .jsx-3900254205;
+  @extend .video-player;
+
+  width: calc(0.56 * (450px + ((100vw - 768px) / 1152) * 100));
+}
+
+.fiv-inner {
+  @extend .jsx-828470630;
+  @extend .image-card;
+
+  border-radius: 4px;
+  background-color: black;
+  background-size: calc(0.56 * (450px + ((100vw - 768px) / 1152) * 100));
+}
+
+.fiv-video-container {
+  @extend .jsx-3143759217;
+  @extend .jsx-1594372409;
+  @extend .video-card-one-column;
+  @extend .default !optional;
+}
+
+.fiv-action-bar {
+  @extend .jsx-1961852495;
+  @extend .pc-action-bar;
+  @extend .item-action-bar;
+  @extend .vertical !optional;
+}
+
+// pages/SignUp.js
+.signup-container {
+  @extend .tiktok-app-container-12zKy;
+}
+
+.signup-header {
+  @extend .tiktok-web-header-13pzv;
+  @extend .is-modal-3Rj9l;
+}
+
+.signup-header-title {
+  @extend .login-title-1Zd0-;
+  @extend .pc-title-1JpDs;
+}
+
+.signup-form {
+  @extend .tiktok-web-body-33PDi;
+  @extend .tiktok-web-body-modal-2N5Wt;
+}
+
+.signup-form-inner {
+  @extend .form-container-OYzkR;
+}
+
+.signup-form-title {
+  @extend .title-wrapper-3KgEa;
+}
+
+.signup-input {
+  @extend .input-field-3x_mo;
+  @extend .input-field-pc-FOzso;
+}
+
+.signup-error {
+  @extend .error-bPXv8;
+}
+
+.signup-error-icon {
+  @extend .after-3ZNth;
+}
+
+.signup-error-text {
+  @extend .errMsg-1ZYT3;
+}
+
+.signup-submit {
+  @extend .login-button-31D24;
+  @extend .highlight-1TvcX;
+}
+
+// pages/VideoPost.js
+.vp-comments-container {
+  @extend .jsx-3748520549;
+  @extend .comment-container;
+}
+
+.vp-comments {
+  @extend .jsx-623407379;
+  @extend .comments;
+}
+
+.vp-comment-container {
+  @extend .jsx-966068288;
+  @extend .comment-item;
+  @extend .comment-pc;
+}
+
+.vp-comment-wrapper {
+  @extend .jsx-2884115300;
+  @extend .comment-content;
+  @extend .level-1 !optional;
+  @extend .comment-pc;
+}
+
+.vp-comment-avatar {
+  @extend .tiktok-avatar;
+  @extend .tiktok-avatar-circle !optional;
+  @extend .comment-avatar;
+  @extend .jsx-379904112;
+  border-width: 0.5px;
+  border-color: rgba(22, 24, 35, 0.12);
+  width: 40px;
+  height: 40px;
+}
+
+.vp-comment-content {
+  @extend .jsx-2884115300;
+  @extend .content-container;
+  @extend .jsx-1088702827;
+}
+
+.vp-comment-link {
+  @extend .user-info;
+  @extend .jsx-1088702827;
+  @extend .comment-pc;
+}
+
+.vp-comment-username {
+  @extend .jsx-2884115300;
+  @extend .username;
+}
+
+.vp-comment-link {
+  @extend .user-avatar;
+  @extend .jsx-1088702827;
+}
+
+.vp-comment-text-container {
+  @extend .jsx-2884115300;
+  @extend .comment-text;
+}
+
+.vp-comment-text {
+  @extend .tt-video-meta-caption;
+  @extend .jsx-1385049866;
+  @extend .jsx-3687787556;
+  display: flex;
+  width: 100%;
+
+  a {
+    margin-left: 4px;
+  }
+}
+
+.vp-comment-form-container {
+  @extend .jsx-3748520549;
+  @extend .comment-post-outside-container;
+}
+
+.vp-comment-form-wrapper {
+  @extend .jsx-3616567239;
+  @extend .comment-post-inner-wrapper;
+}
+
+.vp-comment-form-submit {
+  @extend .jsx-3616567239;
+  @extend .post-container;
+}
+
+.vp-container {
+  @extend .jsx-3748520549;
+  @extend .video-card-big;
+  @extend .browse-mode;
+}
+
+.vp-player-container {
+  @extend .jsx-3748520549;
+  @extend .video-card-container;
+}
+
+.vp-player-wrapper {
+  @extend .jsx-766879148;
+  @extend .video-card-browse;
+}
+
+.vp-player {
+  @extend .jsx-3900254205;
+  @extend .horizontal;
+  @extend .video-player;
+}
+
+.vp-info-caption {
+  @extend .jsx-2551506851;
+  @extend .video-meta-title;
+}
+
+.vp-info-caption-container {
+  @extend .jsx-3748520549;
+  @extend .video-infos-container;
+}
+
+.vp-info-music {
+  @extend .jsx-3565428098;
+  @extend .music-info;
+  display: inline-flex;
+}
+
+.vp-info-displayName {
+  @extend .jsx-1980257888;
+  @extend .jsx-932449746 !optional;
+  @extend .user-nickname;
+}
+
+.vp-info-divider {
+  @extend .jsx-1980257888;
+  @extend .jsx-932449746 !optional;
+}
+
+.vp-info-username {
+  @extend .jsx-1980257888;
+  @extend .user-username;
+}
+
+.vp-info-avatar {
+  @extend .tiktok-avatar;
+  @extend .avatar;
+  @extend .jsx-3659161049;
+  cursor: unset;
+  width: 40px;
+  height: 40px;
+}
+
+.vp-info-avatar-link {
+  @extend .user-avatar;
+  @extend .browser-user-avatar;
+  @extend .jsx-872204369;
+}
+
+.vp-info-user {
+  @extend .jsx-1980257888;
+  @extend .user-info-link-container;
+}
+
+.vp-info-action-container {
+  @extend .jsx-1477301804;
+  @extend .action-container;
+}
+
+.vp-info-action-wrapper {
+  @extend .jsx-1477301804;
+  @extend .action-left;
+}
+
+.vp-info-action {
+  @extend .jsx-1477301804;
+  @extend .action-wrapper-v2;
+}
+
+.vp-info-container {
+  @extend .jsx-3748520549;
+  @extend .user-info-container;
+}
+
+.vp-info-wrapper {
+  @extend .jsx-1980257888;
+  @extend .user-info;
+}
+
+.vp-container-right {
+  @extend .jsx-3748520549;
+  @extend .content-container;
+}
+
+// pages/Upload.js
+.u-container {
+  @extend .desktop-container;
+  @extend .full-container;
+}
+
+.u-wrapper {
+  @extend .main-body;
+  @extend .page-with-header;
+  @extend .middle;
+  @extend .em-follow;
+}
+
+.u-inner {
+  @extend .jsx-788016526;
+  @extend .container;
+}
+
+.u-title {
+  @extend .jsx-788016526;
+  @extend .title;
+}
+
+.u-subtitle {
+  @extend .jsx-788016526;
+  @extend .sub-title;
+}
+
+.u-content {
+  @extend .jsx-788016526;
+  @extend .contents;
+}
+
+.u-preview-video {
+  @extend .video;
+}
+
+.u-preview-delete-button {
+  @extend .jsx-2234542880;
+  @extend .close-icon;
+}
+
+.u-preview-delete-icon {
+  @extend .jsx-2234542880;
+}
+
+.u-preview-file-size {
+  @extend .jsx-2234542880;
+  @extend .size-text;
+}
+
+.u-preview-wrapper {
+  @extend .jsx-2234542880;
+  @extend .preview;
+}
+
+.u-preview-container {
+  @extend .jsx-788016526;
+}
+
+.u-progress-file-size {
+  @extend .jsx-89748091;
+  @extend .size-text;
+}
+
+.u-progress-percentage {
+  @extend .jsx-89748091;
+  @extend .stage-2-text;
+  @extend .margin-t-12;
+}
+.u-progress-close-icon {
+  @extend .jsx-89748091;
+  @extend .close;
+}
+
+.u-progress-file-name-container {
+  @extend .jsx-89748091;
+  @extend .stage-2-text;
+  @extend .margin-t-8;
+}
+
+.u-progress-file-name {
+  @extend .jsx-89748091;
+  @extend .filename;
+}
+
+.u-progress-circle {
+  @extend .jsx-89748091;
+  @extend .progress-container;
+}
+
+.u-progress-circle-container {
+  @extend .jsx-89748091;
+  @extend .card;
+  @extend .stage-2;
+}
+
+.u-progress-container {
+  @extend .jsx-89748091;
+  @extend .upload;
+}
+
+.u-select-file-container {
+  @extend .jsx-1828163283;
+  @extend .upload-btn;
+}
+
+.u-select-file-wrapper {
+  @extend .jsx-89748091;
+  @extend .card;
+  @extend .stage-1;
+}
+
+.u-select-file-icon {
+  @extend .jsx-89748091;
+  width: 49px;
+}
+
+.u-select-file-title {
+  @extend .jsx-89748091;
+  @extend .text-main;
+}
+
+.u-select-file-subtitle {
+  @extend .jsx-89748091;
+  @extend .text-sub;
+  @extend .text-sub-margin;
+}
+
+.u-select-file-spacer,
+.u-select-file-type,
+.u-select-file-dimensions {
+  @extend .jsx-89748091;
+}
+
+.u-select-file-specs {
+  @extend .jsx-89748091;
+  @extend .text-sub;
+}
+
+.u-select-file-input {
+  @extend .jsx-1828163283;
+  @extend .upload-btn-input;
+}
+
+.u-form-submit {
+  @extend .jsx-2205086601;
+  @extend .button;
+  @extend .btn-post;
+  @extend .primary;
+}
+
+.u-form-discard {
+  @extend .jsx-2205086601;
+  @extend .button;
+  @extend .btn-cancel;
+}
+
+.u-form-action {
+  @extend .jsx-2063390925;
+  @extend .op-part;
+}
+
+.u-form-input {
+  @extend .jsx-473749993;
+  @extend .gap-top;
+}
+
+.u-form-title {
+  @extend .jsx-473749993;
+  @extend .title-font;
+}
+
+.u-form-length-container {
+  @extend .jsx-473749993;
+  @extend .require-font;
+}
+
+.u-form-length {
+  @extend .jsx-473749993;
+}
+
+.u-form-header {
+  @extend .jsx-473749993;
+  @extend .text-container;
+}
+
+.u-form-inner {
+  @extend .jsx-473749993;
+}
+
+.u-form-wrapper {
+  @extend .jsx-473749993;
+  @extend .container;
+}
+
+.u-form-container {
+  @extend .jsx-2063390925;
+  @extend .form;
+}
+
+// pages/Profile.js
+.p-container {
+  @extend .main-body;
+  @extend .page-with-header;
+  @extend .middle;
+  @extend .em-follow;
+}
+
+.p-wrapper {
+  @extend .share-layout;
+  @extend .compact;
+  @extend .middle;
+}
+
+.p-inner {
+  @extend .share-layout-content;
+  @extend .jsx-1367655937;
+}
+
+.p-header-container {
+  @extend .jsx-3679044910;
+  @extend .share-layout-header;
+  @extend .share-header;
+}
+
+.p-header-avatar {
+  @extend .tiktok-avatar;
+  @extend .avatar;
+  @extend .jsx-3659161049;
+  cursor: unset;
+  width: 116px;
+  height: 116px;
+}
+
+.p-header-avatar-container {
+  @extend .jsx-260838931;
+  @extend .image-wrap;
+}
+
+.p-header-wrapper {
+  @extend .share-info;
+}
+
+.p-header-user-info {
+  @extend .share-title-container;
+}
+
+.p-header-username {
+  @extend .jsx-1367655937;
+  @extend .share-title;
+}
+
+.p-header-displayName {
+  @extend .share-sub-title;
+}
+
+.p-header-follow-container {
+  @extend .share-follow-container;
+}
+
+.p-header-follow-wrapper {
+  @extend .follow-button-wrap;
+  @extend .button;
+}
+
+.p-header-user-data {
+  @extend .count-infos;
+}
+
+.p-header-data-column {
+  @extend .number;
+}
+
+.p-header-data-title {
+  @extend .unit;
+}
+
+.p-tabs-container {
+  @extend .share-layout-main;
+}
+
+.p-tabs-wrapper {
+  @extend .jsx-3813914829;
+  @extend .video-feed-tab;
+}
+
+.p-tabs-videos-tab {
+  @extend .jsx-3813914829;
+}
+
+.p-tabs-liked-tab {
+  @extend .jsx-3813914829;
+  @extend .like;
+}
+
+.p-tabs-videos-title,
+.p-tabs-liked-title {
+  @extend .jsx-3813914829;
+}
+
+.p-tabs-bottom-line {
+  @extend .jsx-3813914829;
+  @extend .bottom-line;
+}
+
+.p-tabs-posts-container {
+  @extend .jsx-3808264675;
+  @extend .video-feed;
+  @extend .compact;
+}
+
+.p-video-post-like-count {
+  @extend .jsx-3239500515;
+  padding-left: 8px;
+}
+
+.p-video-post-container {
+  @extend .jsx-2261688415;
+  @extend .video-feed-item;
+}
+
+.p-video-post-wrapper {
+  @extend .jsx-2261688415;
+  @extend ._ratio_;
+}
+
+.p-video-post-ratio {
+  @extend .jsx-2261688415;
+  padding-top: 132.653%;
+}
+
+.p-video-post-inner {
+  @extend .jsx-2261688415;
+  @extend ._ratio_wrapper;
+}
+
+.p-video-post-link {
+  @extend .jsx-3808264675;
+}
+
+.p-video-post-player {
+  @extend .jsx-3900254205;
+  @extend .video-player;
+}
+
+.p-video-post-like-container {
+  @extend .jsx-3239500515;
+}
+
+.p-video-post-footer {
+  @extend .jsx-3239500515;
+  @extend .card-footer;
+  @extend .no-avatar;
+}
+
+.p-video-post-mask {
+  @extend .jsx-969240130;
+  @extend .video-card-mask;
+}
+
+.p-video-post-card {
+  @extend .jsx-969240130;
+  @extend .video-card;
+}
+
+.p-video-post-card-container {
+  @extend .jsx-828470630;
+  @extend .image-card;
+}

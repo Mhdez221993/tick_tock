@@ -1,0 +1,1152 @@
+/*! CSS Used from: Embedded */
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.tiktok-avatar {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "tnum";
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+}
+.tiktok-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.tiktok-btn-pc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: ProximaNova, system-ui;
+  min-width: 88px;
+  height: 28px;
+  padding: 6px 8px;
+  background-color: #fff;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  color: #161823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.tiktok-btn-pc:focus {
+  outline: none;
+}
+.tiktok-btn-pc:hover {
+  background: rgba(22, 24, 35, 0.03);
+  border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc:active {
+  background: rgba(22, 24, 35, 0.06);
+  border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc-primary {
+  background-color: #fe2c55;
+  color: #fff;
+  border: none;
+}
+.tiktok-btn-pc-primary:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+    #fe2c55;
+  border: none;
+}
+.tiktok-btn-pc-primary:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    #fe2c55;
+  border: none;
+}
+.tiktok-btn-pc-line {
+  background: #fff;
+  border: 1px solid #fe2c55;
+  color: #fe2c55;
+}
+.tiktok-btn-pc-line:hover {
+  background: rgba(254, 44, 85, 0.06);
+  border: 1px solid #fe2c55;
+}
+.tiktok-btn-pc-line:active {
+  background: rgba(254, 44, 85, 0.16);
+  border: 1px solid #fe2c55;
+}
+.tiktok-btn-pc-medium {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tiktok-btn-pc-medium {
+  min-width: 164px;
+  height: 36px;
+}
+.tiktok-ui-loading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.tiktok-ui-loading-container {
+  overflow: hidden;
+}
+.tiktok-ui-loading-green {
+  fill: #3af2ff;
+  stroke-width: 0;
+  r: 36px;
+  cx: 40px;
+  cy: 44px;
+  -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-red {
+  fill: #fe2c55;
+  stroke-width: 0;
+  r: 36px;
+  cx: 120px;
+  cy: 44px;
+  -webkit-animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black-circle {
+  fill: #0f0f0f;
+  stroke-width: 0;
+  stroke: #fff;
+  r: 36px;
+  cx: 40px;
+  cy: 44px;
+  -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black {
+  fill: #000;
+}
+a {
+  color: inherit;
+}
+p,
+h1,
+h2 {
+  margin: 0;
+}
+strong {
+  font-weight: normal;
+}
+html[pc="yes"] *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html[pc="yes"] *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html[pc="yes"] *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/*! CSS Used from: Embedded */
+.modal.jsx-1285478177 {
+  display: none;
+}
+.modal.jsx-1285478177 .modal-mask.jsx-1285478177 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22, 22, 22, 0.9);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  outline: 0;
+}
+.modal.jsx-1285478177
+  .modal-wrapper.jsx-1285478177
+  .modal-content.jsx-1285478177 {
+  position: relative;
+  border-radius: 8px;
+  margin: auto;
+}
+/*! CSS Used from: Embedded */
+.share-layout {
+  margin: auto;
+  padding: 24px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 1194px;
+}
+@media (max-width: 479px) {
+  .share-layout {
+    padding: 24px 16px;
+  }
+}
+.share-layout.middle .share-layout-content {
+  padding-right: 48px !important;
+}
+.share-layout .share-layout-header {
+  padding-right: 24px;
+  margin-bottom: 30px;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+}
+.share-layout .share-layout-main {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 490px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.share-layout .share-layout-content {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .share-layout {
+    width: auto;
+  }
+  .share-layout .share-layout-content {
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .share-layout {
+    padding-right: 0;
+  }
+  .share-layout .share-layout-content {
+    padding-right: 18px;
+  }
+}
+.share-layout.compact {
+  padding: 36px 20px 36px 128px;
+  width: 1040px;
+}
+.share-layout.compact .share-layout-header {
+  margin-bottom: 20px;
+  width: 594px;
+  box-sizing: border-box;
+  padding-right: 52px;
+}
+.share-layout.compact .share-layout-main {
+  width: 594px;
+  display: block;
+}
+@media (max-width: 991px) {
+  .share-layout.compact {
+    width: auto;
+    padding: 36px 20px 36px 50px;
+  }
+  .share-layout.compact .share-layout-content {
+    padding-right: 0;
+  }
+}
+/*! CSS Used from: Embedded */
+.share-header {
+  position: relative;
+}
+.share-header .share-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.share-header .share-title-container {
+  margin-left: 20px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.share-header .share-title-container .share-follow-container {
+  font-family: "sofiapro-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  position: relative;
+  width: 208px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.share-header .share-title {
+  font-family: "sofiapro-bold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  padding-bottom: 4px;
+}
+.share-header .share-sub-title {
+  font-family: "sofiapro-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-overflow: ellipsis;
+  height: 25px;
+  overflow: hidden;
+  max-width: 450px;
+  white-space: nowrap;
+}
+.share-header .count-infos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 22px;
+  color: rgba(18, 18, 18, 0.75);
+}
+.share-header .count-infos .number {
+  font-family: "sofiapro-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  direction: ltr;
+}
+.share-header .count-infos .number:not(:last-child) {
+  margin-right: 20px;
+}
+.share-header .count-infos .unit {
+  display: inline-block;
+  font-family: "proxima-regular", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-left: 6px;
+}
+.share-header .share-desc {
+  font-family: "proxima-regular", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #121212;
+  white-space: pre-line;
+}
+.share-header .share-desc.mt10 {
+  margin-top: 10px;
+}
+.share-header .share-links {
+  margin-top: 5px;
+  font-family: "sofiapro-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+}
+.share-header .share-links a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  height: 22px;
+  max-width: 236px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #161823;
+  background-image: url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/link_icon-8606a4cf961868a7cc2f89cee4da382c.svg);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-position: center left;
+}
+.share-header .share-links a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+/*! CSS Used from: Embedded */
+.share-follow.jsx-1367655937 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 208px;
+}
+.message-container.jsx-1367655937 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.message-container.jsx-1367655937 .message-button.jsx-1367655937 {
+  height: 36px;
+  margin-right: 8px;
+}
+.hide.jsx-1367655937 {
+  z-index: -1;
+  opacity: 0;
+}
+/*! CSS Used from: Embedded */
+.more-actions.jsx-3679044910 {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+  cursor: pointer;
+}
+/*! CSS Used from: Embedded */
+.image-wrap.jsx-260838931 {
+  position: relative;
+  cursor: pointer;
+}
+/*! CSS Used from: Embedded */
+.avatar.jsx-3659161049 {
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  z-index: 10;
+}
+/*! CSS Used from: Embedded */
+.follow-button-wrap {
+  overflow: hidden;
+}
+.icon-follow {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  background-color: #fff;
+  color: #000;
+}
+.icon-follow:hover {
+  background-color: rgba(22, 24, 35, 0.03);
+}
+/*! CSS Used from: Embedded */
+.follow-button.jsx-551524688 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1px 6px;
+}
+/*! CSS Used from: Embedded */
+.video-feed-tab.jsx-3813914829 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  height: 44px;
+  margin-bottom: 2px;
+}
+.video-feed-tab.jsx-3813914829::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  right: 0;
+  background-color: rgba(22, 24, 35, 0.2);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.video-feed-tab.jsx-3813914829 p.jsx-3813914829 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+.video-feed-tab.jsx-3813914829 p.jsx-3813914829 svg {
+  -webkit-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  transform: translateY(2px);
+}
+.video-feed-tab.jsx-3813914829 > p.jsx-3813914829 {
+  -webkit-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  position: relative;
+  cursor: pointer;
+  font-family: "sofiapro-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(18, 18, 18, 0.5);
+}
+.video-feed-tab.jsx-3813914829 > p.active.jsx-3813914829 {
+  color: #121212;
+}
+.video-feed-tab.jsx-3813914829 .bottom-line.jsx-3813914829 {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #161823;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+/*! CSS Used from: Embedded */
+.video-feed.jsx-3808264675::after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.video-feed.jsx-3808264675 .video-feed-item {
+  display: block;
+  float: left;
+  width: 256px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+@media (max-width: 991px) {
+  .video-feed.jsx-3808264675 {
+    width: 100%;
+  }
+  .video-feed.jsx-3808264675 .video-feed-item {
+    width: 50%;
+    height: auto;
+  }
+  .video-feed.jsx-3808264675 .video-feed-item:nth-child(even) {
+    margin-right: -24px;
+  }
+}
+.video-feed.compact.jsx-3808264675 .video-feed-item {
+  width: 196px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+@media (max-width: 991px) {
+  .video-feed.compact.jsx-3808264675 {
+    width: 100%;
+  }
+  .video-feed.compact.jsx-3808264675 .video-feed-item {
+    width: 50%;
+    height: auto;
+  }
+  .video-feed.compact.jsx-3808264675 .video-feed-item:nth-child(even) {
+    margin-right: -2px;
+  }
+}
+/*! CSS Used from: Embedded */
+._ratio_.jsx-2261688415 {
+  position: relative;
+  width: 100%;
+}
+._ratio_wrapper.jsx-2261688415 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*! CSS Used from: Embedded */
+.right-config-container.jsx-379027331 {
+  position: fixed;
+  right: 24px;
+  bottom: -32px;
+  width: 50px;
+  transition: all 500ms ease 0s;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.right-config-container.hide-top.jsx-379027331 {
+  transform: translateY(0px);
+}
+.to-top.jsx-379027331 {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  background: url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/to-top-icon-12ebc24cab2f8b586e3286930a4e00f4.svg)
+    center center / contain no-repeat transparent;
+  cursor: pointer;
+}
+.app-promotion.jsx-379027331 {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.app-promotion.jsx-379027331 > span.jsx-379027331 {
+  margin: 0px;
+  padding: 0px 8px;
+  min-width: 71px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  border-radius: 52px;
+  cursor: pointer;
+  transform: scale(0);
+  position: absolute;
+  line-height: 30px;
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(22, 24, 35, 0.75);
+  white-space: nowrap;
+}
+.app-promotion.jsx-379027331 > span.show.jsx-379027331 {
+  position: relative;
+  transform: scale(1);
+  margin: 0px;
+}
+.app-promotion.jsx-379027331 > span.jsx-379027331:hover {
+  background: rgb(241, 241, 241);
+}
+.app-promotion.jsx-379027331 .promotion-expand.jsx-379027331 {
+  bottom: -1px;
+  right: -1px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  border-radius: 8px;
+  transform-origin: 100% 100%;
+  display: none;
+  transform: scale(0);
+  animation-name: promotion-expand-hide-jsx-379027331;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.4, 0.14, 0.3, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  > span.jsx-379027331 {
+  display: inline-flex;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-expand-real-contain.jsx-379027331 {
+  margin-left: 16px;
+  margin-right: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.jsx-379027331 {
+  font-family: sofiapro-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 36px;
+  line-height: 36px;
+  min-width: 194px;
+  padding-left: 37px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.jsx-379027331:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.promotion-pwa.jsx-379027331::after {
+  display: block;
+  content: "";
+  width: calc(100% - 16px);
+  height: 1px;
+  position: absolute;
+  bottom: -7px;
+  left: 8px;
+  background-color: rgba(22, 24, 35, 0.12);
+}
+.app-promotion .promotion-expand .promotion-text-container > :first-child {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  .right-config-container.jsx-379027331 {
+    right: 24px;
+  }
+}
+.promotion-download.jsx-379027331 {
+  width: 440px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+  border-radius: 8px;
+  display: table;
+}
+.promotion-download.jsx-379027331 .close-icon.jsx-379027331 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 16px;
+  top: 16px;
+  background: rgba(22, 24, 35, 0.03);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+}
+.promotion-download .close-icon > * {
+  margin: auto;
+  color: rgba(0, 0, 0, 0.8);
+}
+.promotion-download.jsx-379027331 .promotion-title.jsx-379027331 {
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  color: rgb(22, 24, 35);
+  text-align: center;
+}
+.promotion-download.jsx-379027331 .qr-title.jsx-379027331 {
+  display: block;
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(22, 24, 35);
+  text-align: center;
+  padding: 0px 32px;
+}
+.promotion-download.jsx-379027331 .qr-container.jsx-379027331 {
+  width: 100%;
+  height: 104px;
+  margin-top: 16px;
+  display: flex;
+  position: relative;
+}
+.promotion-download.jsx-379027331 .qr-container-wrapper.jsx-379027331 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.promotion-download.jsx-379027331 .qr-code.jsx-379027331 {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin: auto;
+  overflow: hidden;
+}
+.download-container {
+  padding: 29px 26px 48px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+.download-container .download-content {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.download-container .download-content .download-wrapper {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.download-container .download-content .download-wrapper a {
+  margin: 0px 4px;
+}
+.download-container .download-content .download-wrapper a img {
+  width: 170px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 170px;
+}
+.download-container .download-content .download-wrapper a img.amazon {
+  background-position: 0px 0px;
+}
+.download-container .download-content .download-wrapper a img.apple {
+  background-position: 0px -53px;
+}
+.download-container .download-content .download-wrapper a img.google {
+  background-position: 0px -106px;
+}
+.download-container.from-fixed-config {
+  flex-direction: column;
+  width: 376px;
+  padding: 0px 32px;
+  border: none;
+  box-sizing: content-box;
+}
+.download-container.from-fixed-config .download-icon-wrapper {
+  transform: scale(0.69);
+  transform-origin: center top;
+  margin-top: 32px;
+  margin-bottom: 40.5px;
+}
+.download-container.from-fixed-config .download-icon-wrapper a {
+  margin: 0px 8.5px;
+}
+@media (max-width: 991px) {
+  .download-container {
+    padding: 48px 0px;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .download-container .download-content .download-wrapper {
+    flex-direction: column;
+  }
+  .download-container .download-content .download-wrapper a {
+    margin: 4px 0px;
+  }
+}
+img.jsx-354803629 {
+  background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.image);
+}
+.webp img.jsx-354803629 {
+  background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.webp);
+}
+.image-card.jsx-828470630 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(22, 24, 35, 0.06);
+  cursor: pointer;
+  overflow: hidden;
+}
+.image-card.jsx-828470630:not(.fix-edge) {
+  transform: translateZ(0px);
+  -webkit-mask-image: -webkit-radial-gradient(
+    center,
+    circle cover,
+    white 100%,
+    black 100%
+  );
+}
+.video-card.jsx-969240130 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.video-card.jsx-969240130 .video-card-mask.jsx-969240130 {
+  position: absolute;
+  inset: 0px;
+}
+.card-footer.jsx-3239500515 {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 100px;
+  background: linear-gradient(
+    rgba(22, 24, 35, 0) 2.92%,
+    rgba(22, 24, 35, 0.5) 98.99%
+  );
+  padding: 7px 13px 17px;
+  box-sizing: border-box;
+}
+.card-footer.no-avatar.jsx-3239500515 {
+  padding-top: 67px;
+}
+.card-footer.jsx-3239500515 .like-icon {
+  display: inline-block !important;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.card-footer.jsx-3239500515 strong.jsx-3239500515 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 767px) {
+  .card-footer.jsx-3239500515:not(.small) {
+    padding-top: 17px;
+  }
+  .card-footer.no-avatar.jsx-3239500515 {
+    padding-top: 72px;
+  }
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes tiktok-green {
+  25% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  50% {
+    cx: 120px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 21.6px;
+  }
+  to {
+    cx: 40px;
+    r: 36px;
+  }
+}
+@keyframes tiktok-green {
+  25% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  50% {
+    cx: 120px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 21.6px;
+  }
+  to {
+    cx: 40px;
+    r: 36px;
+  }
+}
+@-webkit-keyframes tiktok-red {
+  25% {
+    cx: 80px;
+    r: 24px;
+  }
+  50% {
+    cx: 40px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  to {
+    cx: 120px;
+    r: 36px;
+  }
+}
+@keyframes tiktok-red {
+  25% {
+    cx: 80px;
+    r: 24px;
+  }
+  50% {
+    cx: 40px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  to {
+    cx: 120px;
+    r: 36px;
+  }
+}
+@-webkit-keyframes promotion-expand-hide-jsx-379027331 {
+  0% {
+    transform: scale(1);
+    display: block;
+  }
+  100% {
+    transform: scale(0);
+    display: none;
+  }
+}
+@keyframes promotion-expand-hide-jsx-379027331 {
+  0% {
+    transform: scale(1);
+    display: block;
+  }
+  100% {
+    transform: scale(0);
+    display: none;
+  }
+}
+video.jsx-3900254205 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

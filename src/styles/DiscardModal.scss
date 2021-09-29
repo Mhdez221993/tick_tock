@@ -1,0 +1,64 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  width: 310px;
+  z-index: 1000;
+  overflow: hidden;
+  margin: auto;
+}
+.mask {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.modal-mask {
+  position: fixed;
+  inset: 0px;
+}
+.modal > .emphasis {
+  font-family: proxima-semibold, PingFangSC, sans-serif !important;
+  font-weight: 600 !important;
+  color: rgb(254, 44, 85) !important;
+}
+.modal-mask-container.jsx-1801464094 {
+  position: fixed;
+  inset: 0px;
+  display: flex;
+  z-index: 1001;
+  overflow: auto;
+}
+.modal-title-container.jsx-1801464094 {
+  padding: 32px 32px 24px;
+}
+.modal-title.jsx-1801464094 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(22, 24, 35);
+  word-break: break-word;
+  text-align: center;
+}
+.modal-sub-title.jsx-1801464094 {
+  margin-top: 8px;
+  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, Arial,
+    Tahoma;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-word;
+  text-align: center;
+  color: rgba(22, 24, 35, 0.5);
+}
+.modal-btn.jsx-1801464094 {
+  padding: 16.5px 16px 17px;
+  text-align: center;
+  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif, Arial,
+    Tahoma;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+  word-break: break-word;
+  cursor: pointer;
+}

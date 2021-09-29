@@ -1,0 +1,68 @@
+.header-setting-wrap.jsx-2570553545 {
+  padding: 8px 0;
+  min-width: 223px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.option.jsx-2570553545 {
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #161823;
+  font-family: "proxima-semibold", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  word-break: keep-all;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.option.jsx-2570553545:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.option.jsx-2570553545 i.jsx-2570553545 {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-right: 12px;
+  margin-top: 4px;
+  color: #161823;
+}
+.logout-line.jsx-2570553545 {
+  margin: 8px 0;
+  height: 1px;
+  border: none;
+  background: rgba(22, 24, 35, 0.12);
+  -webkit-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+/*! CSS Used from: Embedded */
+.popup.jsx-1578783174 {
+  position: absolute;
+  z-index: 1;
+  right: -14px;
+  top: calc(100% + 12px);
+  min-width: 200px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.1);
+}
+.popup.jsx-1578783174 .content-wrap-arrow.jsx-1578783174 {
+  top: -8px;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  right: 12px;
+}
+.popup.actions-enter-done.jsx-1578783174 {
+  opacity: 1;
+}

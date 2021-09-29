@@ -1,0 +1,347 @@
+/*! CSS Used from: Embedded */
+a {
+  background-color: transparent;
+}
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/*! CSS Used from: Embedded */
+* {
+  box-sizing: border-box;
+}
+button {
+  display: block;
+  outline: none;
+}
+input {
+  border-style: solid;
+  line-height: 100%;
+  outline: none;
+  pointer-events: initial !important;
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: #00e5dd;
+}
+/*! CSS Used from: Embedded */
+.tiktok-app-container-12zKy {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tiktok-app-container-12zKy .tiktok-web-body-33PDi {
+  flex: 1;
+  width: 472px;
+  min-height: 700px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: auto;
+}
+.tiktok-app-container-12zKy .tiktok-web-body-33PDi.tiktok-web-body-modal-2N5Wt {
+  min-height: auto;
+}
+.help-center-22eg6 {
+  position: absolute;
+  z-index: 10;
+  right: 24px;
+  bottom: 24px;
+  height: 18px;
+  font-family: "ProximaNova-regular";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(22, 24, 35, 0.5);
+  display: flex;
+  align-items: center;
+}
+.help-center-22eg6 .help-icon-16lGU {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(//sf16-scmcdn-va.ibytedtos.com/goofy/ies/tiktok_webapp_login/svgs/help.a708bf24.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*! CSS Used from: Embedded */
+.link-2j8GS {
+  margin: 0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "ProximaNova-regular";
+  color: #161823;
+  font-weight: 600;
+  cursor: pointer;
+}
+.link-2j8GS:hover {
+  color: #161823;
+}
+.link-2j8GS.big-2_yje {
+  font-size: 15px;
+  line-height: 18px;
+}
+.link-2j8GS.red-NZrsR {
+  color: #ff4c3a;
+}
+/*! CSS Used from: Embedded */
+.title-wrapper-3KgEa {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "ProximaNova-semibold";
+  color: #161823;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*! CSS Used from: Embedded */
+.toggle-2SAdO {
+  height: 64px;
+  background: #fff;
+  border-top: 0.5px solid rgba(22, 24, 35, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ProximaNova-regular";
+  font-size: 15px;
+  line-height: 18px;
+  color: #161823;
+}
+.toggle-2SAdO.is-modal-1F8S3 {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 24px;
+}
+.toggle-2SAdO a {
+  font-family: "ProximaNova-semibold";
+}
+/*! CSS Used from: Embedded */
+.tiktok-web-header-13pzv {
+  width: 100%;
+  height: 160px;
+  flex-shrink: 0;
+  padding: 0 20px 90px 22px;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 8px;
+}
+.tiktok-web-header-13pzv .login-title-1Zd0- {
+  flex: 1;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+  font-family: "ProximaNova-bold";
+}
+.tiktok-web-header-13pzv .pc-title-1JpDs {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+.tiktok-web-header-13pzv.is-modal-3Rj9l {
+  height: 48px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+.tiktok-web-header-13pzv.is-modal-3Rj9l .pc-title-1JpDs {
+  top: 48px;
+  bottom: unset;
+}
+/*! CSS Used from: Embedded */
+.login-button-31D24 {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #161823;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  background: none;
+  border-radius: 2px;
+  font-family: "ProximaNova-semibold";
+  font-size: 16px;
+  line-height: 44px;
+  font-weight: 600;
+  position: relative;
+  margin-top: 16px;
+  padding: 0;
+  cursor: pointer;
+}
+.login-button-31D24:not(.disable-fEJEn):hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+    #fe2c55;
+}
+.login-button-31D24:not(.disable-fEJEn):active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    #fe2c55;
+}
+.login-button-31D24.highlight-1TvcX {
+  color: #fff;
+  background-color: #fe2c55;
+  border: none;
+}
+.login-button-31D24:disabled {
+  color: rgba(22, 24, 35, 0.3);
+  background-color: rgba(22, 24, 35, 0.06);
+  cursor: not-allowed;
+}
+/*! CSS Used from: Embedded */
+.input-field-3x_mo {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  line-height: 44px;
+  margin-top: 12px;
+  box-sizing: content-box;
+}
+.input-field-3x_mo .after-3ZNth {
+  display: none;
+}
+.input-field-3x_mo input {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border: none;
+  direction: ltr;
+  color: #161823;
+  font-family: "ProximaNova-regular";
+  font-size: 16px;
+  caret-color: #fe2c55;
+}
+.input-field-3x_mo input::placeholder {
+  font-size: 16px;
+  color: rgba(22, 24, 35, 0.34);
+}
+.input-field-3x_mo input:not(:-webkit-autofill) {
+  animation-name: onAutoFillCancel-2aMli;
+}
+.input-field-3x_mo input:disabled {
+  background: transparent;
+  color: rgba(22, 24, 35, 0.5);
+}
+.input-field-pc-FOzso {
+  border-radius: 4px;
+  position: relative;
+  margin-top: 8px;
+  background: rgba(22, 24, 35, 0.06);
+  border: 1.5px solid rgba(22, 24, 35, 0.06);
+}
+.input-field-pc-FOzso:hover {
+  background: rgba(22, 24, 35, 0.1);
+  border: 1.5px solid rgba(22, 24, 35, 0.1);
+}
+.input-field-pc-FOzso input {
+  padding-left: 12px;
+  background: transparent;
+  outline: none;
+  border-radius: 4px;
+}
+.input-field-pc-FOzso.error-bPXv8 {
+  border: 1.5px solid #ff4c3a;
+  position: relative;
+}
+.input-field-pc-FOzso.error-bPXv8 input {
+  color: #ff4c3a !important;
+}
+.input-field-pc-FOzso.error-bPXv8::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 12px 0;
+  position: absolute;
+  right: 12px;
+  background: url(//sf16-scmcdn-va.ibytedtos.com/goofy/ies/tiktok_webapp_login/svgs/error.d9f0b771.svg)
+    no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+/*! CSS Used from: Embedded */
+.errMsg-1ZYT3 {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "ProximaNova-regular";
+  color: #ff4c3a;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+}
+/*! CSS Used from: Embedded */
+.form-container-OYzkR {
+  position: relative;
+}
+/*! CSS Used keyframes */
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "ProximaNova-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf);
+}
+@font-face {
+  font-family: "ProximaNova-semibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf);
+}
+@font-face {
+  font-family: "ProximaNova-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf);
+}

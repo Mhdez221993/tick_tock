@@ -1,0 +1,235 @@
+/*! CSS Used from: Embedded */
+.tiktok-avatar {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "tnum";
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+}
+.tiktok-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+p,
+h4 {
+  margin: 0;
+}
+html[pc="yes"] *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html[pc="yes"] *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html[pc="yes"] *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/*! CSS Used from: Embedded */
+.search-container.jsx-1785357321 {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .search-container.jsx-1785357321 {
+    display: none;
+  }
+}
+/*! CSS Used from: Embedded */
+.search-input.jsx-3301777038 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(22, 24, 35, 0.06);
+  border-radius: 92px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.search-input.jsx-3301777038 input.jsx-3301777038 {
+  font-family: "proxima-regular", Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  width: 292px;
+  caret-color: #fe2c55;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.search-input.jsx-3301777038 input.with-icon.jsx-3301777038 {
+  width: 252px !important;
+}
+.search-input.jsx-3301777038
+  input.jsx-3301777038:focus
+  ~ .border.jsx-3301777038 {
+  display: block;
+}
+.search-input.jsx-3301777038 input.jsx-3301777038::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.search-input.jsx-3301777038 input.jsx-3301777038::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.search-input.jsx-3301777038 .split.jsx-3301777038 {
+  width: 1px;
+  height: 28px;
+  margin: -3px 0;
+  background: rgba(22, 24, 35, 0.12);
+}
+.search-input.jsx-3301777038 .search-button-container.jsx-3301777038 {
+  padding: 11px 16px 11px 12px;
+  margin: -12px -16px;
+  margin-left: 0;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.search-input.jsx-3301777038 .search-button-container.jsx-3301777038:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.search-input.jsx-3301777038 .search-button-container.jsx-3301777038:active {
+  background: rgba(22, 24, 35, 0.06);
+}
+.search-input.jsx-3301777038 .border.jsx-3301777038 {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1.5px solid rgba(22, 24, 35, 0.2);
+  border-radius: 92px;
+  z-index: -1;
+}
+/*! CSS Used from: Embedded */
+.sug-container.jsx-3629737056 {
+  position: absolute;
+  width: 100%;
+  margin-top: 8px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+  border-radius: 8px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  max-height: 734px;
+  overflow: hidden auto;
+}
+.sug-account-group-title.jsx-3629737056 {
+  font-family: sofiapro-regular;
+  height: 30px;
+  padding: 5px 12px;
+  font-weight: bold;
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+.sug-item.jsx-3368595498 {
+  font-family: "proxima-semibold";
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.sug-item-content.jsx-3368595498 {
+  flex: 0 1 auto;
+  min-width: 0px;
+}
+.sug-more.jsx-4254079686 {
+  padding: 15px 16px;
+  cursor: pointer;
+}
+.sug-more.jsx-4254079686 p.jsx-4254079686 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(22, 24, 35);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.search-input.jsx-3301777038 .split.jsx-3301777038 {
+  width: 1px;
+  height: 28px;
+  margin: -3px 0;
+  background: rgba(22, 24, 35, 0.12);
+}
+
+.loading-circle.jsx-1095385096 {
+  -webkit-animation: loading-circle-anim-jsx-1095385096 linear 1s infinite;
+  animation: loading-circle-anim-jsx-1095385096 linear 1s infinite;
+}
+
+@-webkit-keyframes loading-circle-anim-jsx-1095385096 {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-circle-anim-jsx-1095385096 {
+  0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
