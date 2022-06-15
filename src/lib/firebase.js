@@ -15,3 +15,4 @@ const increment = firebase.firestore.FieldValue.increment;
 
 export { auth, provider, storage, serverTimestamp, increment };
 export default db;
+
