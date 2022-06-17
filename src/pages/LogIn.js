@@ -1,4 +1,11 @@
+import { auth, provider } from "lib/firebase";
+
 export default function LogIn() {
+  async function signIn(){
+    const data = await auth.signInWithPopup(provider);
+    console.log(data);
+  }
+
   return (
     <div className="login-container">
       <header className="login-header"></header>
@@ -10,7 +17,7 @@ export default function LogIn() {
           <div className="login-options">
             <LoginOption src="/email.png" text="Use phone or email" />
             <LoginOption src="/facebook.png" text="Continue with Facebook" />
-            <LoginOption src="/google.png" text="Continue with Google" />
+            <LoginOption src="/google.png" text="Continue with Google" onClick={signIn} />
             <LoginOption src="/twitter.png" text="Continue with Twitter" />
           </div>
         </div>
