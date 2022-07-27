@@ -1,0 +1,1410 @@
+a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.tiktok-avatar {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "tnum";
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+}
+.tiktok-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.tiktok-btn-pc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: ProximaNova, system-ui;
+  min-width: 88px;
+  height: 28px;
+  padding: 6px 8px;
+  background-color: #fff;
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  color: #161823;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.tiktok-btn-pc:focus {
+  outline: none;
+}
+.tiktok-btn-pc:hover {
+  background: rgba(22, 24, 35, 0.03);
+  border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc:active {
+  background: rgba(22, 24, 35, 0.06);
+  border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc-line {
+  background: #fff;
+  border: 1px solid #fe2c55;
+  color: #fe2c55;
+}
+.tiktok-btn-pc-line:hover {
+  background: rgba(254, 44, 85, 0.06);
+  border: 1px solid #fe2c55;
+}
+.tiktok-btn-pc-line:active {
+  background: rgba(254, 44, 85, 0.16);
+  border: 1px solid #fe2c55;
+}
+.tiktok-btn-pc-medium {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tiktok-btn-pc-medium {
+  min-width: 164px;
+  height: 36px;
+}
+.tiktok-ui-loading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.tiktok-ui-loading-container {
+  overflow: hidden;
+}
+.tiktok-ui-loading-green {
+  fill: #3af2ff;
+  stroke-width: 0;
+  r: 36px;
+  cx: 40px;
+  cy: 44px;
+  -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-red {
+  fill: #fe2c55;
+  stroke-width: 0;
+  r: 36px;
+  cx: 120px;
+  cy: 44px;
+  -webkit-animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black-circle {
+  fill: #0f0f0f;
+  stroke-width: 0;
+  stroke: #fff;
+  r: 36px;
+  cx: 40px;
+  cy: 44px;
+  -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+  animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black {
+  fill: #000;
+}
+a {
+  color: inherit;
+}
+h3,
+h4 {
+  margin: 0;
+}
+strong {
+  font-weight: normal;
+}
+.page-with-header {
+  padding-top: 60px;
+}
+.main-body {
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0 auto;
+}
+.main-body.middle {
+  max-width: 1100px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .main-body.middle.em-follow {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+  }
+}
+html[pc="yes"] *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html[pc="yes"] *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html[pc="yes"] *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/*! CSS Used from: Embedded */
+.modal.jsx-1285478177 {
+  display: none;
+}
+.modal.jsx-1285478177 .modal-mask.jsx-1285478177 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22, 22, 22, 0.9);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  outline: 0;
+}
+.modal.jsx-1285478177
+  .modal-wrapper.jsx-1285478177
+  .modal-content.jsx-1285478177 {
+  position: relative;
+  border-radius: 8px;
+  margin: auto;
+}
+/*! CSS Used from: Embedded */
+.side-bar-container.jsx-2315075850 {
+  position: relative;
+  -webkit-flex: 0 0 245px;
+  -ms-flex: 0 0 245px;
+  flex: 0 0 245px;
+}
+.em-follow.side-bar-container.jsx-2315075850 {
+  -webkit-flex: 0 0 356px !important;
+  -ms-flex: 0 0 356px !important;
+  flex: 0 0 356px !important;
+}
+@media (max-width: 991px) {
+  .em-follow.side-bar-container.jsx-2315075850 {
+    -webkit-flex: 0 0 68px !important;
+    -ms-flex: 0 0 68px !important;
+    flex: 0 0 68px !important;
+  }
+}
+/*! CSS Used from: Embedded */
+.trending-container.jsx-1648041292 {
+  padding: 24px 0;
+  margin-right: 24px;
+  width: 692px;
+  max-width: 692px;
+}
+@media (max-width: 991px) {
+  .trending-container.jsx-1648041292 {
+    margin-left: 16px;
+  }
+}
+/*! CSS Used from: Embedded */
+.video-feed-container.jsx-1860510881 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.video-feed-container.jsx-1860510881::after {
+  content: "";
+  height: 0px;
+  display: block;
+  clear: both;
+}
+.video-feed-container.jsx-1860510881 .video-feed-item {
+  width: 592px;
+  max-width: 592px;
+}
+@media (max-width: 991px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item {
+    width: calc(100vw - 290px) !important;
+  }
+}
+@media (max-width: 767px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item {
+    width: calc(100vw - 40px) !important;
+  }
+}
+@media (max-width: 479px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item {
+    width: calc(100vw - 32px) !important;
+  }
+}
+@media (max-width: 991px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item.em-follow {
+    width: 592px !important;
+    max-width: 592px !important;
+  }
+}
+@media (max-width: 767px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item.em-follow {
+    width: calc((100vw - 40px) - 68px) !important;
+  }
+}
+@media (max-width: 479px) {
+  .video-feed-container.jsx-1860510881 .video-feed-item.em-follow {
+    width: calc((100vw - 32px) - 68px) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .video-feed-container.jsx-1860510881 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 479px) {
+  .video-feed-container.jsx-1860510881 {
+    margin-right: 0px;
+  }
+}
+.right-config-container.jsx-379027331 {
+  position: fixed;
+  right: 24px;
+  bottom: -32px;
+  width: 50px;
+  transition: all 500ms ease 0s;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.right-config-container.hide-top.jsx-379027331 {
+  transform: translateY(0px);
+}
+.to-top.jsx-379027331 {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  background: url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/to-top-icon-12ebc24cab2f8b586e3286930a4e00f4.svg)
+    center center / contain no-repeat transparent;
+  cursor: pointer;
+}
+.app-promotion.jsx-379027331 {
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.app-promotion.jsx-379027331 > span.jsx-379027331 {
+  margin: 0px;
+  padding: 0px 8px;
+  min-width: 71px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  border-radius: 52px;
+  cursor: pointer;
+  transform: scale(0);
+  position: absolute;
+  line-height: 30px;
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(22, 24, 35, 0.75);
+  white-space: nowrap;
+}
+.app-promotion.jsx-379027331 > span.show.jsx-379027331 {
+  position: relative;
+  transform: scale(1);
+  margin: 0px;
+}
+.app-promotion.jsx-379027331 > span.jsx-379027331:hover {
+  background: rgb(241, 241, 241);
+}
+.app-promotion.jsx-379027331 .promotion-expand.jsx-379027331 {
+  bottom: -1px;
+  right: -1px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(22, 24, 35, 0.12);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+  border-radius: 8px;
+  transform-origin: 100% 100%;
+  display: none;
+  transform: scale(0);
+  animation-name: promotion-expand-hide-jsx-379027331;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(0.4, 0.14, 0.3, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  > span.jsx-379027331 {
+  display: inline-flex;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-expand-real-contain.jsx-379027331 {
+  margin-left: 16px;
+  margin-right: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.jsx-379027331 {
+  font-family: sofiapro-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 36px;
+  line-height: 36px;
+  min-width: 194px;
+  padding-left: 37px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.jsx-379027331:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.app-promotion.jsx-379027331
+  .promotion-expand.jsx-379027331
+  .promotion-text-container.promotion-pwa.jsx-379027331::after {
+  display: block;
+  content: "";
+  width: calc(100% - 16px);
+  height: 1px;
+  position: absolute;
+  bottom: -7px;
+  left: 8px;
+  background-color: rgba(22, 24, 35, 0.12);
+}
+.app-promotion .promotion-expand .promotion-text-container > :first-child {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  .right-config-container.jsx-379027331 {
+    right: 24px;
+  }
+}
+.promotion-download.jsx-379027331 {
+  width: 440px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+  border-radius: 8px;
+  display: table;
+}
+.promotion-download.jsx-379027331 .close-icon.jsx-379027331 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 16px;
+  top: 16px;
+  background: rgba(22, 24, 35, 0.03);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+}
+.promotion-download .close-icon > * {
+  margin: auto;
+  color: rgba(0, 0, 0, 0.8);
+}
+.promotion-download.jsx-379027331 .promotion-title.jsx-379027331 {
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  color: rgb(22, 24, 35);
+  text-align: center;
+}
+.promotion-download.jsx-379027331 .qr-title.jsx-379027331 {
+  display: block;
+  font-family: proxima-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(22, 24, 35);
+  text-align: center;
+  padding: 0px 32px;
+}
+.promotion-download.jsx-379027331 .qr-container.jsx-379027331 {
+  width: 100%;
+  height: 104px;
+  margin-top: 16px;
+  display: flex;
+  position: relative;
+}
+.promotion-download.jsx-379027331 .qr-container-wrapper.jsx-379027331 {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.promotion-download.jsx-379027331 .qr-code.jsx-379027331 {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin: auto;
+  overflow: hidden;
+}
+.download-container {
+  padding: 29px 26px 48px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+.download-container .download-content {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.download-container .download-content .download-wrapper {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.download-container .download-content .download-wrapper a {
+  margin: 0px 4px;
+}
+.download-container .download-content .download-wrapper a img {
+  width: 170px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 170px;
+}
+.download-container .download-content .download-wrapper a img.amazon {
+  background-position: 0px 0px;
+}
+.download-container .download-content .download-wrapper a img.apple {
+  background-position: 0px -53px;
+}
+.download-container .download-content .download-wrapper a img.google {
+  background-position: 0px -106px;
+}
+.download-container.from-fixed-config {
+  flex-direction: column;
+  width: 376px;
+  padding: 0px 32px;
+  border: none;
+  box-sizing: content-box;
+}
+.download-container.from-fixed-config .download-icon-wrapper {
+  transform: scale(0.69);
+  transform-origin: center top;
+  margin-top: 32px;
+  margin-bottom: 40.5px;
+}
+.download-container.from-fixed-config .download-icon-wrapper a {
+  margin: 0px 8.5px;
+}
+@media (max-width: 991px) {
+  .download-container {
+    padding: 48px 0px;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .download-container .download-content .download-wrapper {
+    flex-direction: column;
+  }
+  .download-container .download-content .download-wrapper a {
+    margin: 4px 0px;
+  }
+}
+img.jsx-354803629 {
+  background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.image);
+}
+.webp img.jsx-354803629 {
+  background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.webp);
+}
+.video-feed-item.jsx-1253735330 {
+  position: relative;
+  padding: 20px 0px;
+  border-bottom: 0.5px solid rgba(22, 24, 35, 0.12);
+}
+.video-feed-item.jsx-1253735330 .feed-item-content.jsx-1253735330 {
+  position: relative;
+  margin-left: 68px;
+}
+@media (max-width: 479px) {
+  .video-feed-item.jsx-1253735330 .feed-item-content.jsx-1253735330 {
+    margin-left: 0px;
+  }
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-follow-wrapper {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-follow-wrapper
+  .follow-button {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  min-width: 88px;
+  padding: 0px 10px;
+  height: 28px;
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-video-container.jsx-1253735330 {
+  position: relative;
+  display: inline-block;
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-video-container.jsx-1253735330
+  > div.jsx-1253735330:hover
+  .report-text {
+  opacity: 1;
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-video-card-wrapper.jsx-1253735330 {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background: rgb(22, 24, 35);
+  border-radius: 8px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-action-bar {
+  position: absolute;
+  right: -64px;
+  bottom: 0px;
+}
+@media (max-width: 767px) {
+  .video-feed-item.jsx-1253735330
+    .feed-item-content.jsx-1253735330
+    .item-action-bar {
+    right: -52px;
+  }
+}
+.video-feed-item.jsx-1253735330
+  .feed-item-content.jsx-1253735330
+  .item-music-info-V4 {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  max-width: 524px;
+}
+.video-feed-item.jsx-1253735330 .feed-item-content.jsx-1253735330 .report-text {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+.item-music-info-V4::before {
+  background: url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/music-80312cad94fb3699012382f64283dc74.svg)
+    center center no-repeat transparent !important;
+}
+.engagement-icon-v23 {
+  background-color: rgba(22, 24, 35, 0.06);
+  padding: 12px !important;
+  border-radius: 100%;
+  margin-left: 0px;
+  cursor: pointer;
+  width: 24px !important;
+  height: 24px !important;
+  background-size: 24px !important;
+  background-position: center center !important;
+}
+.engagement-icon-v23:hover {
+  background: rgba(22, 24, 35, 0.2);
+}
+@media (max-width: 767px) {
+  .engagement-icon-v23 {
+    padding: 6px;
+    width: 20px !important;
+    height: 20px !important;
+    background-size: 20px !important;
+  }
+}
+.engagement-text-v23 {
+  color: rgba(22, 24, 35, 0.75);
+  font-family: proxima-semibold, PingFangSC, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  line-height: 17px !important;
+  padding: 0px 7px 0px 8px !important;
+}
+.feed-item-avatar:hover ~ .feed-item-content .author-uniqueId {
+  text-decoration: underline;
+}
+.author-info-content.jsx-1385049866 {
+  margin-right: 150px;
+}
+.tt-video-meta-caption.jsx-1385049866 {
+  margin-right: 150px;
+}
+@media (max-width: 479px) {
+  .tt-video-meta-caption.jsx-1385049866 {
+    margin-right: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 10px !important;
+  }
+}
+.user-avatar.jsx-872204369 {
+  position: relative;
+  cursor: pointer;
+}
+.feed-item-avatar.jsx-872204369 {
+  float: left;
+  position: relative;
+}
+@media (max-width: 479px) {
+  .feed-item-avatar.jsx-872204369 {
+    width: 52px;
+  }
+}
+.feed-item-avatar:hover ~ .feed-item-content .author-uniqueId {
+  text-decoration: underline;
+}
+.live-circle.jsx-260838931 {
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 50%;
+  border: 1px solid rgb(254, 44, 85);
+  box-sizing: border-box;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transform-origin: 50% 50%;
+}
+.live-circle.jsx-260838931::before {
+  content: "";
+  position: absolute;
+  width: calc(200% + 2px);
+  height: calc(200% + 2px);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgb(254, 44, 85);
+  transform: scale(0.5);
+}
+.live-circle.animation.jsx-260838931 {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  z-index: 11;
+}
+.live-circle.animation.jsx-260838931::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  left: -1px;
+  top: -1px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 119, 146, 0.5);
+  animation: 1.8s ease-out 0s infinite normal none running
+    small-circle-animate-jsx-260838931;
+  transform-origin: 50% 50%;
+  box-shadow: rgba(255, 119, 146, 0.5) 0px -0.5px 0.5px 0.5px;
+}
+.live-tag.jsx-260838931 {
+  position: absolute;
+  background: linear-gradient(
+    131.17deg,
+    rgb(255, 23, 100) 0%,
+    rgb(237, 52, 149) 94.15%
+  );
+  border-radius: 2px;
+  height: 15px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 1px 4px 0px;
+  color: rgb(255, 255, 255);
+  line-height: 15px;
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  bottom: -6px;
+  left: 50%;
+  z-index: 12;
+  width: auto;
+  word-break: keep-all;
+  transform: translate(-50%, 0%);
+  border: 1px solid rgb(255, 255, 255);
+}
+.avatar.jsx-3659161049 {
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  z-index: 10;
+}
+.live-image-animation.jsx-3659161049 {
+  animation: 1.8s ease-out 0.9s infinite normal none running
+    avatar-animate-jsx-3659161049;
+}
+.author-info-content.jsx-442964640 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.author-info-content.horizontal.jsx-442964640 {
+  flex-flow: row wrap;
+}
+.tt-author-info.jsx-1959324491 {
+  cursor: default;
+}
+.author-info-content.horizontal.jsx-1959324491 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.author-info-content.horizontal.jsx-1959324491 .author-uniqueId.jsx-1959324491 {
+  margin-right: 4px;
+}
+.author-info-content.horizontal.jsx-1959324491 .author-nickname.jsx-1959324491 {
+  line-height: 28px;
+}
+.author-uniqueId.jsx-1959324491 {
+  font-family: sofiapro-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+.author-uniqueId.jsx-1959324491:hover {
+  cursor: pointer;
+}
+.author-uniqueId.jsx-1959324491 .verified.jsx-1959324491 {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  font-size: 0px;
+  vertical-align: middle;
+  margin-left: 4px;
+  margin-top: -3px;
+}
+.author-nickname.jsx-1959324491 {
+  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.author-nickname.jsx-1959324491:hover {
+  cursor: pointer;
+}
+.follow-button-wrap {
+  overflow: hidden;
+}
+.follow-button.jsx-551524688 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 1px 6px;
+}
+.tt-video-music.jsx-3169958153 {
+  position: relative;
+  max-width: 302px;
+  overflow: hidden;
+}
+.tt-video-music.jsx-3169958153:hover {
+  text-decoration: underline;
+}
+.tt-video-music.jsx-3169958153 a,
+.tt-video-music.jsx-3169958153 a:hover,
+.tt-video-music.jsx-3169958153 a:active,
+.tt-video-music.jsx-3169958153 a:link {
+  color: rgb(255, 255, 255);
+}
+.tt-video-music.jsx-3169958153 .video-music-content.jsx-3169958153 {
+  display: flex;
+  width: max-content;
+}
+.tt-video-music.jsx-3169958153 .video-music-content.pause.jsx-3169958153 {
+  animation-play-state: paused !important;
+}
+.tt-video-music.jsx-3169958153 .music-title-decoration.jsx-3169958153:hover {
+  text-decoration: underline;
+}
+.tt-video-music.jsx-3169958153
+  .music-title-decoration.jsx-3169958153
+  .music-icon {
+  display: inline-block !important;
+  margin-right: 5px;
+  transform: translateY(0px) !important;
+}
+.tt-video-music.black.jsx-3169958153 a,
+.tt-video-music.black.jsx-3169958153 a:hover,
+.tt-video-music.black.jsx-3169958153 a:active,
+.tt-video-music.black.jsx-3169958153 a:link {
+  color: rgb(22, 24, 35);
+}
+.tt-video-music.black.jsx-3169958153 .video-music-content.jsx-3169958153 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tt-video-music.jsx-854321451 .video-music-wrapper.jsx-854321451 {
+  font-family: sofiapro-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  display: block;
+  overflow: hidden;
+}
+.tt-video-music.black.jsx-854321451 .video-music-wrapper.jsx-854321451 {
+  font-size: 16px;
+  line-height: 22px;
+  height: 22px;
+}
+.tt-video-music.black.jsx-854321451
+  .video-music-wrapper.inline-block.jsx-854321451 {
+  display: inline-block;
+}
+.image-card.jsx-828470630 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(22, 24, 35, 0.06);
+  cursor: pointer;
+  overflow: hidden;
+}
+.image-card.jsx-828470630:not(.fix-edge) {
+  transform: translateZ(0px);
+  -webkit-mask-image: -webkit-radial-gradient(
+    center,
+    circle cover,
+    white 100%,
+    black 100%
+  );
+}
+.video-card-one-column.jsx-3143759217 {
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.video-card-one-column.jsx-3143759217 .event-delegate-mask.jsx-3143759217 {
+  position: absolute;
+  inset: 0px;
+}
+.video-card-one-column.jsx-3143759217 .style-layer-mask.jsx-3143759217 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 200px;
+  pointer-events: none;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.video-card-one-column.jsx-3143759217 .toggle-icon.jsx-3143759217 {
+  position: absolute;
+  left: 66px;
+  top: 16px;
+  width: 40px;
+  height: 40px;
+  background: center center / contain no-repeat transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+  z-index: 10;
+}
+.video-card-one-column.jsx-3143759217
+  .toggle-icon.jsx-3143759217
+  .toggle-inner {
+  transform: translate(10px, 10px);
+}
+.video-card-one-column.jsx-3143759217 .toggle-icon-v4.jsx-3143759217 {
+  bottom: 12px;
+  left: 12px;
+  top: unset;
+  right: unset;
+}
+.video-card-one-column.jsx-3143759217 .toggle-icon-v4.higher.jsx-3143759217 {
+  bottom: 28px;
+}
+.video-card-one-column.jsx-3143759217:hover .toggle-icon.jsx-3143759217 {
+  opacity: 1;
+}
+.video-card-one-column.jsx-1594372409:hover .mute-icon.jsx-1594372409 {
+  opacity: 1;
+}
+.video-card-one-column.jsx-1594372409 .show-mute.jsx-1594372409 {
+  opacity: 1;
+}
+.report-text.jsx-3631677326 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.report-text.jsx-3631677326 .report-icon {
+  margin-right: 4px;
+  transform: translateY(3px);
+}
+.pc-action-bar.jsx-1961852495 {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.pc-action-bar.jsx-1961852495 .bar-item-wrapper.jsx-1961852495 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 48px;
+  font-size: 13px;
+}
+.pc-action-bar.jsx-1961852495
+  .bar-item-wrapper.jsx-1961852495
+  .bar-item-img.jsx-1961852495 {
+  width: 24px !important;
+  height: 24px !important;
+  background-size: 24px 24px !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  margin-top: 8px !important;
+}
+.bar-item-text.jsx-18968439 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  display: inline-block;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 6px;
+}
+.tt-video-meta-caption.jsx-3687787556 {
+  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(18, 18, 18);
+  flex: 0 0 auto;
+  font-weight: normal;
+  margin-bottom: 0px;
+  word-break: break-word;
+}
+a.jsx-3687787556 {
+  font-family: proxima-semibold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 600;
+  color: rgb(18, 18, 18);
+}
+a.jsx-3687787556:hover {
+  text-decoration: underline;
+}
+a.jsx-3687787556:hover {
+  text-decoration: underline;
+}
+a.jsx-3687787556 strong {
+  font-weight: 600;
+}
+a.duet-with.jsx-3687787556 {
+  display: inline-block;
+  background: rgba(18, 18, 18, 0.06);
+  border-radius: 2px;
+  color: rgb(18, 18, 18);
+  padding: 1px 5px 1px 25px;
+  position: relative;
+}
+a.duet-with.jsx-3687787556 .play-icon.jsx-3687787556 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 5px;
+}
+video.jsx-3900254205 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mute-icon.jsx-858351972 {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+  z-index: 10;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.mute-icon.one_column.jsx-858351972 {
+  bottom: 12px;
+  right: 12px;
+  top: unset;
+  left: unset;
+}
+.volume-wrapper-column.jsx-858351972 {
+  position: absolute;
+  bottom: 28px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.volume-wrapper-column.jsx-858351972 .mute-icon.jsx-858351972 {
+  position: relative;
+  bottom: initial !important;
+  right: initial !important;
+  left: initial !important;
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes tiktok-green {
+  25% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  50% {
+    cx: 120px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 21.6px;
+  }
+  to {
+    cx: 40px;
+    r: 36px;
+  }
+}
+@keyframes tiktok-green {
+  25% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  50% {
+    cx: 120px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 21.6px;
+  }
+  to {
+    cx: 40px;
+    r: 36px;
+  }
+}
+@-webkit-keyframes tiktok-red {
+  25% {
+    cx: 80px;
+    r: 24px;
+  }
+  50% {
+    cx: 40px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  to {
+    cx: 120px;
+    r: 36px;
+  }
+}
+@keyframes tiktok-red {
+  25% {
+    cx: 80px;
+    r: 24px;
+  }
+  50% {
+    cx: 40px;
+    r: 36px;
+  }
+  75% {
+    cx: 80px;
+    r: 43.2px;
+  }
+  to {
+    cx: 120px;
+    r: 36px;
+  }
+}
+@-webkit-keyframes promotion-expand-hide-jsx-379027331 {
+  0% {
+    transform: scale(1);
+    display: block;
+  }
+  100% {
+    transform: scale(0);
+    display: none;
+  }
+}
+@keyframes promotion-expand-hide-jsx-379027331 {
+  0% {
+    transform: scale(1);
+    display: block;
+  }
+  100% {
+    transform: scale(0);
+    display: none;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf)
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf)
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "proxima-bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Proxima:Nova"), local("ProximaNova-Bold"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff2)
+      format("woff2"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "sofiapro-bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Sofia:Pro"), local("SofiaPro-Bold"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.otf)
+      format("opentype"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/embed-Sofia-Pro-Bold.ttf)
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Proxima:Nova"), local("ProximaNova-Semibold"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2)
+      format("woff2"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "sofiapro-semibold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Sofia:Pro"), local("SofiaPro-Semibold"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-semibold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "proxima-regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Proxima:Nova"), local("ProximaNova-Regular"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf);
+  font-display: swap;
+}

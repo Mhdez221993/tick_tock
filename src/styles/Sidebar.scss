@@ -1,0 +1,698 @@
+/*! CSS Used from: Embedded */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+h2,
+h4,
+p {
+  margin: 0px;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body a {
+  color: rgb(22, 24, 35);
+  transition: color 250ms ease 0s;
+  text-decoration: none;
+  cursor: pointer;
+}
+body a:visited {
+  color: rgb(22, 24, 35);
+}
+body a:hover {
+  color: rgb(22, 24, 35);
+  text-decoration: underline;
+}
+body a:active {
+  color: rgb(22, 24, 35);
+}
+body a:focus {
+  color: rgb(22, 24, 35);
+}
+html ::-webkit-scrollbar {
+  border-radius: 0px;
+  width: 8px;
+}
+html ::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/*! CSS Used from: Embedded */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h2,
+h4,
+p {
+  margin: 0;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body a {
+  color: rgba(22, 24, 35, 1);
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+body a:visited {
+  color: rgba(22, 24, 35, 1);
+}
+body a:hover {
+  color: rgba(22, 24, 35, 1);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+body a:active {
+  color: rgba(22, 24, 35, 1);
+}
+body a:focus {
+  color: rgba(22, 24, 35, 1);
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 767px) {
+  .tiktok-ixclwa-DivSideNavMask {
+    position: fixed;
+    inset: 59px 0 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.tiktok-1tgrt5d-DivSideNavContainer {
+  position: relative;
+  width: 356px;
+  -webkit-flex: 0 0 356px;
+  -ms-flex: 0 0 356px;
+  flex: 0 0 356px;
+}
+@media screen and (max-width: 767px) {
+  .tiktok-1tgrt5d-DivSideNavContainer {
+    z-index: 99;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1tgrt5d-DivSideNavContainer {
+    width: 68px;
+    -webkit-flex: 0 0 68px;
+    -ms-flex: 0 0 68px;
+    flex: 0 0 68px;
+  }
+}
+.tiktok-1tccpi0-DivScrollContainer-StyledScroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-right: 12px;
+  perspective-origin: right top;
+  top: 60px;
+  bottom: 0;
+  width: 356px;
+  background: rgba(255, 255, 255, 1);
+  position: fixed;
+  padding-right: 8px;
+}
+.tiktok-1tccpi0-DivScrollContainer-StyledScroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.tiktok-1tccpi0-DivScrollContainer-StyledScroll:hover .eiq9y2u0 {
+  opacity: 1;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1tccpi0-DivScrollContainer-StyledScroll {
+    padding: 0 8px;
+    width: 68px;
+    -webkit-flex: 0 0 68px;
+    -ms-flex: 0 0 68px;
+    flex: 0 0 68px;
+    border-right: 1px solid rgba(22, 24, 35, 0.12);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  }
+}
+.tiktok-pgynkg-DivWrapper {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 20px 0 26px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 100%;
+  padding-left: 8px;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-pgynkg-DivWrapper {
+    padding: 12px 0 26px;
+  }
+}
+.tiktok-2wq5nm-DivMainNavContainer {
+  margin-bottom: 8px;
+  padding: 0;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-2wq5nm-DivMainNavContainer {
+    padding: 0;
+  }
+}
+.tiktok-ajitim-StyledTmpLink {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: background ease-in-out 200ms;
+  transition: background ease-in-out 200ms;
+}
+.tiktok-ajitim-StyledTmpLink:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.tiktok-ajitim-StyledTmpLink:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+.tiktok-ajitim-StyledTmpLink:hover {
+  background: rgba(22, 24, 35, 0.03);
+}
+.tiktok-ajitim-StyledTmpLink:active {
+  background: rgba(22, 24, 35, 0.06);
+}
+@media screen and (max-width: 991px) {
+  .tiktok-ajitim-StyledTmpLink {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+.tiktok-dkkjv1-H2MainNavText {
+  color: rgba(254, 44, 85, 1);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-dkkjv1-H2MainNavText {
+    display: none;
+  }
+}
+.tiktok-1cc8sge-H2MainNavText {
+  color: rgba(22, 24, 35, 1);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 8px;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1cc8sge-H2MainNavText {
+    display: none;
+  }
+}
+.tiktok-1xc03qp-DivFrameContainer {
+  position: relative;
+  padding: 20px 8px 24px 8px;
+  margin: 0;
+}
+.tiktok-1xc03qp-DivFrameContainer::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 8px;
+  right: 8px;
+  background: rgba(22, 24, 35, 0.12);
+  -webkit-transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  top: 0;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1xc03qp-DivFrameContainer {
+    display: none;
+  }
+}
+.tiktok-105v97b-PLoginHint {
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 16px;
+  line-height: 22px;
+}
+.tiktok-7i6i4k-Button-StyledLogin {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  color: rgba(254, 44, 85, 1);
+  border-color: rgba(254, 44, 85, 1);
+  background-color: rgba(255, 255, 255, 1);
+  min-width: 168px;
+  min-height: 48px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: SofiaPro, PingFangSC, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 6px 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 100%;
+}
+.tiktok-7i6i4k-Button-StyledLogin:hover {
+  background-color: rgba(254, 44, 85, 0.06);
+}
+.tiktok-7i6i4k-Button-StyledLogin:active {
+  background-color: rgba(254, 44, 85, 0.16);
+}
+.tiktok-7i6i4k-Button-StyledLogin:disabled {
+  border-color: rgba(22, 24, 35, 0.12);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(22, 24, 35, 0.34);
+  pointer-events: none;
+}
+.tiktok-7i6i4k-Button-StyledLogin:focus {
+  outline: none;
+}
+.tiktok-n370wx-DivUserContainer {
+  padding: 16px 0;
+  color: rgba(22, 24, 35, 0.75);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+}
+.tiktok-n370wx-DivUserContainer::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 0;
+  height: 1px;
+  background: rgba(22, 24, 35, 0.12);
+  -webkit-transform: scaleY(0.5);
+  -moz-transform: scaleY(0.5);
+  -ms-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+@media screen and (max-width: 991px) {
+  .tiktok-n370wx-DivUserContainer {
+    padding: 8px 0;
+  }
+}
+.tiktok-d5918w-PTitle {
+  padding: 0 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-d5918w-PTitle {
+    display: none;
+  }
+}
+.tiktok-l5ex3n-DivScrollBar {
+  position: absolute;
+  padding: 0 4px;
+  top: 0;
+  transform-origin: right top;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
+  right: 0;
+  transform-origin: right top;
+}
+.tiktok-4jy5wt-DivScrollBarThumb {
+  width: 6px;
+  height: 100%;
+  border-radius: 3px;
+  background: rgba(22, 24, 35, 0.06);
+}
+.tiktok-gigx3u-SpanAvatarContainer-StyledAvatar {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-feature-settings: "tnum";
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 32px;
+  border-radius: 50%;
+  background-color: rgba(136, 136, 136, 0.5);
+  border-color: rgba(22, 24, 35, 0.12);
+  border-width: 0.5px;
+  cursor: pointer;
+}
+.tiktok-1zpj2q-ImgAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tiktok-1rein3m-StyledVerifyBadge {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+/*! CSS Used from: Embedded */
+.tiktok-kwqs83-DivUserLinkContainer {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  transition: background 200ms ease-in-out 0s;
+}
+.tiktok-kwqs83-DivUserLinkContainer:hover {
+  text-decoration: none;
+}
+// .tiktok-kwqs83-DivUserLinkContainer:hover {
+//   background: rgba(22, 24, 35, 0.03);
+// }
+// .tiktok-kwqs83-DivUserLinkContainer:active {
+//   background: rgba(22, 24, 35, 0.06);
+// }
+.tiktok-1nmvph8-DivContainer-StyledUserAvatar {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex: 0 0 48px;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1nmvph8-DivContainer-StyledUserAvatar {
+    margin-right: 0px;
+    margin-left: 2px;
+  }
+}
+.tiktok-1e4xwpk-StyledUserContentLink {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  height: 32px;
+}
+.tiktok-1e4xwpk-StyledUserContentLink:hover {
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-1e4xwpk-StyledUserContentLink {
+    display: none;
+  }
+}
+.tiktok-yt7cul-DivUserTitleWrapper {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.tiktok-arsb3q-H4UserTitle {
+  color: rgb(22, 24, 35);
+  font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: -2px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tiktok-1f4lmy9-PUserDesc {
+  color: rgba(22, 24, 35, 0.75);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tiktok-z9p8mf-DivShowMoreTextContainer {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .tiktok-z9p8mf-DivShowMoreTextContainer {
+    display: none;
+  }
+}
+.tiktok-1ezua2b-PShowMoreText {
+  color: rgb(254, 44, 85);
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.tiktok-gopybs-StyledArrowDown {
+  margin-left: 4px;
+  transition: all 0.3s ease 0s;
+  transform: none;
+  display: none;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Regular"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Semibold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf)
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Bold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Regular"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Semibold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2)
+      format("woff2"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf)
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: local("ProximaNova-Bold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Bold.otf)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Regular"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Semiold"),
+    url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/webapp/main/a1a44f86d5ec7500dbfb.woff2)
+      format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Bold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.otf)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Regular"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-regular.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-regular.otf)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Semiold"),
+    url(https://sf16-scmcdn-va.ibytedtos.com/goofy/tiktok/webapp/main/a1a44f86d5ec7500dbfb.woff2)
+      format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SofiaPro;
+  src: local("SofiaPro-Bold"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.woff)
+      format("woff"),
+    url(//lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.otf)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

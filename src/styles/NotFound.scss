@@ -1,0 +1,94 @@
+/*! CSS Used from: Embedded */
+p {
+  margin: 0px;
+}
+html[pc="yes"] ::-webkit-scrollbar {
+  border-radius: 0px;
+  width: 8px;
+}
+html[pc="yes"] ::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+html[pc="yes"] ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.error-page.jsx-1973985703 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+  max-height: 100vh;
+  text-align: center;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+.error-page.jsx-1973985703 .title.jsx-1973985703 {
+  font-family: sofiapro-bold, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  color: rgb(18, 18, 18);
+}
+.error-page.jsx-1973985703 .desc.jsx-1973985703 {
+  max-width: 480px;
+  display: inline-block;
+  font-family: proxima-regular, Arial, Tahoma, PingFangSC, sans-serif,
+    "Segoe UI Emoji", "Noto Emoji";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(18, 18, 18, 0.75);
+}
+@media (max-width: 991px) {
+  .error-page.jsx-1973985703 {
+    padding: 120px 0px 114px 40px;
+  }
+  .error-page.jsx-1973985703 .title.jsx-1973985703 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .error-page.jsx-1973985703 .desc.jsx-1973985703 {
+    max-width: 360px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.net-error.jsx-1973985703 {
+  height: 100vh;
+  padding-top: 0px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: sofiapro-bold;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Sofia:Pro"), local("SofiaPro-Bold"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/sofiapro-bold.otf)
+      format("opentype"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/embed-Sofia-Pro-Bold.ttf)
+      format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: proxima-regular;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Proxima:Nova"), local("ProximaNova-Regular"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2)
+      format("woff2"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.woff)
+      format("woff"),
+    url(https://lf16-tiktok-common.ibytedtos.com/obj/tiktok-web-common-sg/falcon/tiktok_fonts/Proxima-Nova-Regular.otf);
+  font-display: swap;
+}
