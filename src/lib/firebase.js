@@ -4,7 +4,7 @@ import "firebase/firestore";
 import "firebase/storage";
 import firebaseConfig from "lib/firebaseConfig";
 
-const app = !firebase.app.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
 
 const db = app.firestore();
 const auth = app.auth();
