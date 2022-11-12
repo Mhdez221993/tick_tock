@@ -24,7 +24,7 @@ export default function AuthApp() {
           <VideoPost />
         </Route>
 
-        <Route path="/:username">
+        <Route exact path="/:username">
           <Profile />
         </Route>
 
