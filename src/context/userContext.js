@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 const UserContext = createContext();
 
 export function UserProvider({ children }) {
-  const [useAuthUser] = useAuthState(auth);
+  const [authUser] = useAuthState(auth);
   const [user, setUser] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
@@ -14,16 +14,12 @@ export function UserProvider({ children }) {
 
     ref.get().then(doc => {
       if (doc.exists) {
-        setUser({
-          id: doc.id,
-          ref: doc.ref,
-          ...doc.data()
-        })
+        setUser({ id: doc.id, ref: doc.ref, ...doc.data() })
       }
     }).catch(error => console.error("Error fetching user", error))
     .finally(() => setLoading(false))
 
-  }, [useAuthUser])
+  }, [authUser])
 
   return (
     <UserContext.Provider value={[user, isLoading]}>
