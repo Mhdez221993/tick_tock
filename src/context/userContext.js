@@ -1,5 +1,5 @@
 import db, { auth } from "lib/firebase";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const UserContext = createContext();
@@ -32,4 +32,12 @@ export function UserProvider({ children }) {
   );
 }
 
-export default function useAuthUser() {}
+export default function useAuthUser() {
+  const context = useContext(UserContext);
+
+  if (context === undefined) {
+    throw new Error("useAuthUser mush be used with UserContext.Provider")
+  }
+
+  return context;
+}
