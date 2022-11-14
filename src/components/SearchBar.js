@@ -5,7 +5,7 @@ export default function SearchBar() {
     <div className="searchbar-container">
       <form className="searchbar-form">
 
-        <input autoComplete="off" type="text" placeholder="search accounts" className="searchbar-input" />
+        <input autoComplete="off" type="text" placeholder="Search accounts" className="searchbar-input" />
 
         <div></div>
         <span className="searchbar-border"></span>
