@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function useDragDrop() {
+export default function useDragDrop(onDrop) {
   const dropRef = useRef();
 
   function handleDrag(e){
@@ -14,7 +14,8 @@ export default function useDragDrop() {
 
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       const file = e.dataTransfer.files[0];
-      console.log(file);
+      onDrop(file);
+      e.dataTransfer.clearData();
     }
   }
 
