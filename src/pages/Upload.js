@@ -1,4 +1,5 @@
 import DraftEditor from "components/DraftEditor";
+import useDragDrop from "hooks/useDragDrop";
 
 export default function Upload() {
   return (
@@ -35,8 +36,10 @@ function UploadProgress() {
 }
 
 function UploadSelectFile() {
+  const { dropRef } = useDragDrop();
+
   return (
-    <div className="u-select-file-container">
+    <div ref={dropRef} className="u-select-file-container">
       <div className="u-select-file-wrapper">
         <img src="/cloud-icon.svg" alt="Cloud icon" className="u-select-file-icon" />
         <div className="u-select-file-title">Select video to upload</div>
