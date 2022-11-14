@@ -34,7 +34,24 @@ function UploadProgress() {
   return "uploadprogress";
 }
 
-
+function UploadSelectFile() {
+  return (
+    <div className="u-select-file-container">
+      <div className="u-select-file-wrapper">
+        <img src="/cloud-icon.svg" alt="Cloud icon" className="u-select-file-icon" />
+        <div className="u-select-file-title">Select video to upload</div>
+        <div className="u-select-file-subtitle">Or drap and drop a file</div>
+        <br className="u-select-file-spacer" />
+        <ul className="u-select-file-specs">
+          <li className="u-select-file-type">MP4 or WebM</li>
+          <li className="u-select-file-dimentions">720x1280 resolution or higher</li>
+          <li>Up to 180 seconds</li>
+        </ul>
+      </div>
+      <input type="file" id="file-input" accept="video/mp4, video/webm" className="u-select-file-input" />
+    </div>
+  );
+}
 
 function UploadForm() {
   return (
