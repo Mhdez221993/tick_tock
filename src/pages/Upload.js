@@ -36,7 +36,11 @@ function UploadProgress() {
 }
 
 function UploadSelectFile() {
-  const { dropRef } = useDragDrop();
+  const { dropRef } = useDragDrop(getVideoDuration);
+
+  function getVideoDuration(file) {
+    console.log(file);
+  }
 
   return (
     <div ref={dropRef} className="u-select-file-container">
