@@ -1,4 +1,6 @@
+import { storage } from "lib/firebase";
 import { useState } from "react";
+import shortid from "shortid";
 
 export default function useFirebaseUpload(user) {
   const [file, setFile] = useState(null);
@@ -8,8 +10,10 @@ export default function useFirebaseUpload(user) {
   const [videoUrl, setVideoUrl] = useState('');
 
   function handleUpload(file) {
+    const uploadId = shortid();
     setFile(file);
     setUploading(true);
+    storage.ref(`uploads/${user.uid}/${uploadId}`).put(file);
   }
 
   return { handleUpload };
