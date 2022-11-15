@@ -24,7 +24,7 @@ export default function Upload() {
           <div className="u-content">
             { videoUrl && <UploadPreview file={file} videoUrl={videoUrl} />}
             {isUploading && <UploadProgress file={file} uploadProgress={uploadProgress} />}
-            <UploadSelectFile handleUpload={handleUpload} />
+            <UploadSelectFile isUploading={ isUploading } videoUrl={ videoUrl } handleUpload={ handleUpload } />
             <UploadForm />
           </div>
         </div>
@@ -66,7 +66,7 @@ function UploadProgress({ file, uploadProgress }) {
   );
 }
 
-function UploadSelectFile({ handleUpload }) {
+function UploadSelectFile({ handleUpload, isUploading, videoUrl }) {
   const { dropRef, inputRef, selectFile, onSelectFile } = useDragDrop(getVideoDuration);
 
   function getVideoDuration(file) {
@@ -95,7 +95,11 @@ function UploadSelectFile({ handleUpload }) {
   }
 
   return (
-    <div onClick={selectFile} ref={dropRef} className="u-select-file-container">
+    <div
+      onClick={selectFile}
+      ref={dropRef}
+      className={`u-select-file-container ${isUploading} || ${videoUrl} ? "empty" : ""`}
+    >
       <div className="u-select-file-wrapper">
         <img src="/cloud-icon.svg" alt="Cloud icon" className="u-select-file-icon" />
         <div className="u-select-file-title">Select video to upload</div>
