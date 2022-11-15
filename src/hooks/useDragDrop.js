@@ -35,5 +35,12 @@ export default function useDragDrop(onDrop) {
     inputRef.current.click();
   }
 
-  return { dropRef, inputRef, selectFile };
+  function onSelectFile(e) {
+    const file = e.target.files[0];
+    if (file) {
+      onDrop(file);
+    }
+  }
+
+  return { dropRef, inputRef, selectFile, onSelectFile };
 }
