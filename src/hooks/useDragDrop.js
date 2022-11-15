@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 
 export default function useDragDrop(onDrop) {
   const dropRef = useRef();
+  const inputRef = useRef();
 
   function handleDrag(e){
     e.preventDefault();
@@ -28,7 +29,7 @@ export default function useDragDrop(onDrop) {
       dropErea.removeEventListener('dragover', handleDrag);
       dropErea.removeEventListener('drop', handleDrop);
     }
-  })
+  });
 
-  return { dropRef };
+  return { dropRef, inputRef };
 }
