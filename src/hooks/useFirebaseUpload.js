@@ -19,6 +19,8 @@ export default function useFirebaseUpload(user) {
     uploadTask.on('state_change', (snapshot) => {
       const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
       setUploadProgress(progress);
+    }, error => {
+      console.error("Error uploading file", error);
     })
   }
 
