@@ -31,5 +31,9 @@ export default function useDragDrop(onDrop) {
     }
   });
 
-  return { dropRef, inputRef };
+  function selectFile() {
+    inputRef.current.click();
+  }
+
+  return { dropRef, inputRef, selectFile };
 }
