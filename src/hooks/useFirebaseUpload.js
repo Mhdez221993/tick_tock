@@ -21,6 +21,14 @@ export default function useFirebaseUpload(user) {
       setUploadProgress(progress);
     }, error => {
       console.error("Error uploading file", error);
+      setUploading(false);
+    }, () => {
+      storage.ref(`uploads/${user.uid}/${uploadId}`)
+      .getDownloadURL()
+      .then(url => {
+        setVideoUrl(url)
+        setUploading(false)
+      })
     })
   }
 
