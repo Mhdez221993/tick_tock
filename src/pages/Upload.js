@@ -54,8 +54,15 @@ function UploadProgress({ file, uploadProgress }) {
       <div className="u-progress-circle-container">
 
         <div className="u-progress-circle">
-          <UploadCircleIcon />
-          <img src="/close.svg" alt="Close" className="u-progress-close-icon" />
+          <UploadCircleIcon progress={ uploadProgress } />
+          <img
+            src="/close.svg"
+            alt="Close"
+            className="u-progress-close-icon"
+            style={{
+              marginTop: -27
+            }}
+          />
           <div className="u-progress-percentage">{ uploadProgress }</div>
           <div className="u-progress-file-name-container"><span className="u-progress-file-name">{ file.name }</span></div>
         </div>
