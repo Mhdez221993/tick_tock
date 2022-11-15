@@ -36,14 +36,14 @@ function UploadProgress() {
 }
 
 function UploadSelectFile() {
-  const { dropRef, inputRef } = useDragDrop(getVideoDuration);
+  const { dropRef, inputRef, selectFile } = useDragDrop(getVideoDuration);
 
   function getVideoDuration(file) {
     console.log(file);
   }
 
   return (
-    <div ref={dropRef} className="u-select-file-container">
+    <div onClick={selectFile} ref={dropRef} className="u-select-file-container">
       <div className="u-select-file-wrapper">
         <img src="/cloud-icon.svg" alt="Cloud icon" className="u-select-file-icon" />
         <div className="u-select-file-title">Select video to upload</div>
