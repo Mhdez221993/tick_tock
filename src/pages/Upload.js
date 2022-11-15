@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 
 export default function Upload() {
   const [user] = useAuthUser();
-  const { handleUpload, file, videoUrl, isUploading, uploadProgress } = useFirebaseUpload(user);
+  const { handleUpload, cancelUpload, file, videoUrl, isUploading, uploadProgress } = useFirebaseUpload(user);
 
   return (
     <div className="u-container">
@@ -23,7 +23,7 @@ export default function Upload() {
 
           <div className="u-content">
             { videoUrl && <UploadPreview file={file} videoUrl={videoUrl} />}
-            {isUploading && <UploadProgress file={file} uploadProgress={uploadProgress} />}
+            {isUploading && <UploadProgress cancelUpload={ cancelUpload } file={file} uploadProgress={uploadProgress} />}
             <UploadSelectFile isUploading={ isUploading } videoUrl={ videoUrl } handleUpload={ handleUpload } />
             <UploadForm />
           </div>
@@ -48,7 +48,7 @@ function UploadPreview({ file, videoUrl }) {
   );
 }
 
-function UploadProgress({ file, uploadProgress }) {
+function UploadProgress({ file, uploadProgress, cancelUpload }) {
   return (
     <div className="u-progress-container">
       <div className="u-progress-circle-container">
@@ -56,6 +56,7 @@ function UploadProgress({ file, uploadProgress }) {
         <div className="u-progress-circle">
           <UploadCircleIcon progress={ uploadProgress } />
           <img
+            onClick={ cancelUpload }
             src="/close.svg"
             alt="Close"
             className="u-progress-close-icon"
