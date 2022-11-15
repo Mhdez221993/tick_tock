@@ -36,7 +36,7 @@ function UploadProgress() {
 }
 
 function UploadSelectFile() {
-  const { dropRef, inputRef, selectFile } = useDragDrop(getVideoDuration);
+  const { dropRef, inputRef, selectFile, onSelectFile } = useDragDrop(getVideoDuration);
 
   function getVideoDuration(file) {
     console.log(file);
@@ -57,6 +57,7 @@ function UploadSelectFile() {
       </div>
       <input
         ref={inputRef}
+        onChange={onSelectFile}
         type="file"
         id="file-input"
         accept="video/mp4, video/webm"
