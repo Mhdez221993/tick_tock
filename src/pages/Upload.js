@@ -1,10 +1,12 @@
 import DraftEditor from "components/DraftEditor";
 import useAuthUser from "context/userContext";
 import useDragDrop from "hooks/useDragDrop";
+import useFirebaseUpload from "hooks/useFirebaseUpload";
 import toast from "react-hot-toast";
 
 export default function Upload() {
   const [user] = useAuthUser();
+  const { handleUpload } = useFirebaseUpload(user);
 
   return (
     <div className="u-container">
@@ -21,7 +23,7 @@ export default function Upload() {
           <div className="u-content">
             {/* <UploadPreview />
             <UploadProgress /> */}
-            <UploadSelectFile />
+            <UploadSelectFile handleUpload={handleUpload} />
             <UploadForm />
           </div>
         </div>
@@ -39,7 +41,7 @@ function UploadProgress() {
   return "uploadprogress";
 }
 
-function UploadSelectFile() {
+function UploadSelectFile({ handleUpload }) {
   const { dropRef, inputRef, selectFile, onSelectFile } = useDragDrop(getVideoDuration);
 
   function getVideoDuration(file) {
@@ -59,7 +61,7 @@ function UploadSelectFile() {
             }
           })
         } else {
-          console.log("Hanlde file upload", file);
+          handleUpload(file);
         }
       }
     }
