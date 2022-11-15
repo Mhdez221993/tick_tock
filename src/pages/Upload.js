@@ -1,8 +1,11 @@
 import DraftEditor from "components/DraftEditor";
+import useAuthUser from "context/userContext";
 import useDragDrop from "hooks/useDragDrop";
 import toast from "react-hot-toast";
 
 export default function Upload() {
+  const [user] = useAuthUser();
+
   return (
     <div className="u-container">
       <div className="u-wrapper">
@@ -11,7 +14,7 @@ export default function Upload() {
           <div className="u-title">
             Upload Video
             <div className="u-subtitle">
-              This video will be published to username
+              This video will be published to {user.username}
             </div>
           </div>
 
