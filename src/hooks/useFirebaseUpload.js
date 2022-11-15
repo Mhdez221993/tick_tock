@@ -32,5 +32,5 @@ export default function useFirebaseUpload(user) {
     })
   }
 
-  return { handleUpload };
+  return { handleUpload, file, videoUrl, isUploading, uploadProgress };
 }
