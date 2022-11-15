@@ -1,5 +1,6 @@
 import DraftEditor from "components/DraftEditor";
 import useDragDrop from "hooks/useDragDrop";
+import toast from "react-hot-toast";
 
 export default function Upload() {
   return (
@@ -39,7 +40,28 @@ function UploadSelectFile() {
   const { dropRef, inputRef, selectFile, onSelectFile } = useDragDrop(getVideoDuration);
 
   function getVideoDuration(file) {
-    console.log(file);
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      const media = new Audio(reader.result);
+      media.onloadedmetadata = () => {
+        const duration = Math.round(media.duration);
+        if (duration > 180) {
+          toast("Video is over the 3-minute limit", {
+            style: {
+              fontFamily: 'proxima-regular',
+              borderRadius: 10,
+              background: "#333",
+              color: '#fff'
+            }
+          })
+        } else {
+          console.log("Hanlde file upload", file);
+        }
+      }
+    }
+
+    reader.readAsDataURL(file);
   }
 
   return (
