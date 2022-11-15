@@ -32,5 +32,12 @@ export default function useFirebaseUpload(user) {
     })
   }
 
-  return { handleUpload, file, videoUrl, isUploading, uploadProgress };
+  async function cancelUpload() {
+    if (uploadTask) {
+      setUploading(false);
+      await uploadTask.cancel();
+    }
+  }
+
+  return { handleUpload, cancelUpload, file, videoUrl, isUploading, uploadProgress };
 }
