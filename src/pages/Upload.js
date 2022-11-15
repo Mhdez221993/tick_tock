@@ -2,11 +2,12 @@ import DraftEditor from "components/DraftEditor";
 import useAuthUser from "context/userContext";
 import useDragDrop from "hooks/useDragDrop";
 import useFirebaseUpload from "hooks/useFirebaseUpload";
+import UploadCircleIcon from "icons/UploadCircleIcon";
 import toast from "react-hot-toast";
 
 export default function Upload() {
   const [user] = useAuthUser();
-  const { handleUpload } = useFirebaseUpload(user);
+  const { handleUpload, file, videoUrl, isUploading, uploadProgress } = useFirebaseUpload(user);
 
   return (
     <div className="u-container">
@@ -21,8 +22,8 @@ export default function Upload() {
           </div>
 
           <div className="u-content">
-            {/* <UploadPreview />
-            <UploadProgress /> */}
+            { videoUrl && <UploadPreview file={file} videoUrl={videoUrl} />}
+            {isUploading && <UploadProgress file={file} uploadProgress={uploadProgress} />}
             <UploadSelectFile handleUpload={handleUpload} />
             <UploadForm />
           </div>
@@ -37,8 +38,22 @@ function UploadPreview() {
   return "uploadpreview";
 }
 
-function UploadProgress() {
-  return "uploadprogress";
+function UploadProgress({ file, uploadProgress }) {
+  return (
+    <div className="u-progress-container">
+      <div className="u-progress-circle-container">
+
+        <div className="u-progress-circle">
+          <UploadCircleIcon />
+          <img src="/close.svg" alt="Close" className="u-progress-close-icon" />
+          <div className="u-progress-percentage">{ uploadProgress }</div>
+          <div className="u-progress-file-name-container"><span className="u-progress-file-name">{ file.name }</span></div>
+        </div>
+
+        <div className="u-progress-file-size"> { Math.round(file.size / 1000000) } MM</div>
+      </div>
+    </div>
+  );
 }
 
 function UploadSelectFile({ handleUpload }) {
