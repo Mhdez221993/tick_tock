@@ -34,8 +34,16 @@ export default function Upload() {
   );
 }
 
-function UploadPreview() {
-  return "uploadpreview";
+function UploadPreview({ file, videoUrl }) {
+  return (
+    <div className="u-preview-container">
+      <div className="u-preview-wrapper">
+        <button className="u-preview-delete-button"><img src="" alt="" className="u-preview-delete-icon" /></button>
+        <video src="" className="u-preview-video"></video>
+      </div>
+      <div className="u-preview-file-size">Math.round(file.size / 1000000) MB</div>
+    </div>
+  );
 }
 
 function UploadProgress({ file, uploadProgress }) {
