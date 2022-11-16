@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 export default function Upload() {
   const [user] = useAuthUser();
-  const { handleUpload, cancelUpload, file, videoUrl, isUploading, uploadProgress } = useFirebaseUpload(user);
+  const { handleUpload, cancelUpload, discardUpload, file, videoUrl, isUploading, uploadProgress } = useFirebaseUpload(user);
 
   return (
     <div className="u-container">
@@ -25,9 +25,12 @@ export default function Upload() {
 
           <div className="u-content">
             { videoUrl && <UploadPreview file={file} videoUrl={videoUrl} />}
+
             {isUploading && <UploadProgress cancelUpload={ cancelUpload } file={file} uploadProgress={uploadProgress} />}
+
             <UploadSelectFile isUploading={ isUploading } videoUrl={ videoUrl } handleUpload={ handleUpload } />
-            <UploadForm />
+
+            <UploadForm discardUpload={ discardUpload } />
           </div>
         </div>
 
@@ -135,10 +138,10 @@ function UploadSelectFile({ handleUpload, isUploading, videoUrl }) {
   );
 }
 
-function UploadForm() {
+function UploadForm({ discardUpload }) {
   return (
     <>
-      <DiscardModal />
+      <DiscardModal onConfirm={discardUpload} />
 
       <div className="u-form-container">
         <div className="u-form-wrapper">
