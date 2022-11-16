@@ -1,7 +1,7 @@
 import Modal from "components/Modal";
 import useDiscardModal from "context/discardModalContext";
 
-export default function DiscardModal() {
+export default function DiscardModal({ onConfirm }) {
   const { isDiscardOpen, closeDiscard } = useDiscardModal();
 
   return (
@@ -14,8 +14,8 @@ export default function DiscardModal() {
           </div>
         </div>
 
-        <button className="discard-modal-confirm">Discard</button>
-        <button className="discard-modal-discard">Continue editing</button>
+        <button className="discard-modal-confirm" onClick={onConfirm}>Discard</button>
+        <button className="discard-modal-discard" onClick={ closeDiscard }>Continue editing</button>
       </div>
     </Modal>
   );
