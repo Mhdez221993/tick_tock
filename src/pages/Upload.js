@@ -139,9 +139,16 @@ function UploadSelectFile({ handleUpload, isUploading, videoUrl }) {
 }
 
 function UploadForm({ discardUpload }) {
+  const { closeDiscard } = useDiscardModal();
+
+  function onConfirm() {
+    discardUpload();
+    closeDiscard();
+  }
+
   return (
     <>
-      <DiscardModal onConfirm={discardUpload} />
+      <DiscardModal onConfirm={onConfirm} />
 
       <div className="u-form-container">
         <div className="u-form-wrapper">
