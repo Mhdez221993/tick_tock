@@ -1,8 +1,11 @@
 import Modal from "components/Modal";
+import useDiscardModal from "context/discardModalContext";
 
 export default function DiscardModal() {
+  const { isDiscardOpen, closeDiscard } = useDiscardModal();
+
   return (
-    <Modal>
+    <Modal open={isDiscardOpen} onClose={ closeDiscard } >
       <div className="discard-modal-container">
         <div className="discard-modal-title-container">
           <div className="discard-modal-title">Discard this post?</div>
