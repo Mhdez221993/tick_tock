@@ -1,4 +1,5 @@
 import DraftEditor from "components/DraftEditor";
+import useDiscardModal from "context/discardModalContext";
 import useAuthUser from "context/userContext";
 import useDragDrop from "hooks/useDragDrop";
 import useFirebaseUpload from "hooks/useFirebaseUpload";
@@ -35,10 +36,12 @@ export default function Upload() {
 }
 
 function UploadPreview({ file, videoUrl }) {
+  const { openDiscard } = useDiscardModal();
+
   return (
     <div className="u-preview-container">
       <div className="u-preview-wrapper">
-        <button className="u-preview-delete-button">
+        <button onClick={ openDiscard } className="u-preview-delete-button">
           <img src="/delete.svg" alt="Delete" className="u-preview-delete-icon" />
         </button>
         <video src={videoUrl} autoPlay loop muted className="u-preview-video"></video>
