@@ -39,5 +39,12 @@ export default function useFirebaseUpload(user) {
     }
   }
 
-  return { handleUpload, cancelUpload, file, videoUrl, isUploading, uploadProgress };
+  function discardUpload() {
+    setUploading(false);
+    setUploadProgress(0);
+    setVideoUrl('');
+    setFile(null);
+  }
+
+  return { handleUpload, cancelUpload, discardUpload, file, videoUrl, isUploading, uploadProgress };
 }
