@@ -1,3 +1,4 @@
+import DiscardModal from "components/DiscardModal";
 import DraftEditor from "components/DraftEditor";
 import useDiscardModal from "context/discardModalContext";
 import useAuthUser from "context/userContext";
@@ -136,24 +137,28 @@ function UploadSelectFile({ handleUpload, isUploading, videoUrl }) {
 
 function UploadForm() {
   return (
-    <div className="u-form-container">
-      <div className="u-form-wrapper">
-        <div className="u-form-inner">
+    <>
+      <DiscardModal />
 
-          <div className="u-form-header"><span
-          className="u-form-title">Caption</span><span
-          className="u-form-length-container"><span
-          className="u-form-length">0 / 150</span></span></div>
+      <div className="u-form-container">
+        <div className="u-form-wrapper">
+          <div className="u-form-inner">
 
-          <div className="u-form-input">
-            <DraftEditor></DraftEditor>
+            <div className="u-form-header"><span
+            className="u-form-title">Caption</span><span
+            className="u-form-length-container"><span
+            className="u-form-length">0 / 150</span></span></div>
+
+            <div className="u-form-input">
+              <DraftEditor></DraftEditor>
+            </div>
           </div>
-        </div>
 
-        <div className="u-form-action"><button
-        className="u-form-discard">Discard</button><button
-        className="u-form-submit">Post</button></div>
+          <div className="u-form-action"><button
+          className="u-form-discard">Discard</button><button
+          className="u-form-submit">Post</button></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
