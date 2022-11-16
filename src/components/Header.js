@@ -31,7 +31,9 @@ export default function Header() {
 
           <InboxIcon />
 
-          <div className="h-avatar-container"><img src={user.photoURL} alt={user.username} className="h-avatar" /></div>
+          <div className="h-avatar-container">
+            <img src={user.photoURL} alt={user.username} className="h-avatar" />
+          </div>
         </div>
       </div>
     </div>
