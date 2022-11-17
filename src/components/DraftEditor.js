@@ -27,11 +27,11 @@ export default function DraftEditor({
     setSugestions(defaultSuggestionsFilter(value, users));
   }
 
-  const { plugin, MentionSuggestions } = useMemo(() => {
+  const { plugins, MentionSuggestions } = useMemo(() => {
     const mentionPlugin = createMentionPlugin();
     const { MentionSuggestions } = mentionPlugin;
-    const plugin = [mentionPlugin];
-    return { plugin, MentionSuggestions };
+    const plugins = [mentionPlugin];
+    return { plugins, MentionSuggestions };
   }, [])
 
   return (
@@ -44,7 +44,7 @@ export default function DraftEditor({
             <Editor
               editorState={editorState}
               onChange={setEditorState}
-              plugin={plugin}
+              plugins={plugins}
               ref={editorRef}
             />
 
