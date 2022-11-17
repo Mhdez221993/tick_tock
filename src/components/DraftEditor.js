@@ -7,14 +7,14 @@ export default function DraftEditor() {
       <div className="editor-wrapper">
         <div className="editor-inner">
           <div>
-            <Editor></Editor>
-            <MentionSuggestions></MentionSuggestions>
+            <Editor />
+            <MentionSuggestions />
           </div>
         </div>
       </div>
-      <button className="editor-mention-button"><img src="" alt=""
+      <button className="editor-mention-button"><img src="/at-icon.svg" alt="At icon"
       className="editor-mention-icon" /></button><button
-      className="editor-hashtag-button"><img src="" alt=""
+      className="editor-hashtag-button"><img src="/hashtag-icon.svg" alt="Hashtag Icon"
       className="editor-hashtag-icon" /></button></div>
   );
 }
