@@ -2,7 +2,7 @@ import { createMentionPlugin } from "@draft-js-plugins/mention";
 import { Editor } from "draft-js";
 import { useMemo, useRef } from "react";
 
-export default function DraftEditor() {
+export default function DraftEditor({ editorState, setEditorState, onInputChange, maxLength = 150 }) {
   const editorRef = useRef();
 
   const { plugin, MentionSuggestions } = useMemo(() => {
@@ -16,7 +16,9 @@ export default function DraftEditor() {
     <div className="editor-container">
       <div className="editor-wrapper">
         <div className="editor-inner">
-          <div>
+          <div onClick={() => {
+            editorRef.current.focus();
+          }}>
             <Editor
               ref={editorRef}
             />
