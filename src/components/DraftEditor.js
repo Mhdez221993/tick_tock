@@ -1,13 +1,26 @@
-import { MentionSuggestions } from "@draft-js-plugins/mention";
+import { createMentionPlugin } from "@draft-js-plugins/mention";
 import { Editor } from "draft-js";
+import { useMemo, useRef } from "react";
 
 export default function DraftEditor() {
+  const editorRef = useRef();
+
+  const { plugin, MentionSuggestions } = useMemo(() => {
+    const mentionPlugin = createMentionPlugin();
+    const { MentionSuggestions } = mentionPlugin;
+    const plugin = [mentionPlugin];
+    return { plugin, MentionSuggestions };
+  }, [])
+
   return (
     <div className="editor-container">
       <div className="editor-wrapper">
         <div className="editor-inner">
           <div>
-            <Editor />
+            <Editor
+              ref={editorRef}
+            />
+
             <MentionSuggestions />
           </div>
         </div>
