@@ -20,6 +20,9 @@ export default function DraftEditor({ editorState, setEditorState, onInputChange
             editorRef.current.focus();
           }}>
             <Editor
+              editorState={editorState}
+              onChange={setEditorState}
+              plugin={plugin}
               ref={editorRef}
             />
 
