@@ -1,15 +1,18 @@
 import { createMentionPlugin } from "@draft-js-plugins/mention";
 import { Editor } from "draft-js";
 import db from "lib/firebase";
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 export default function DraftEditor({ editorState, setEditorState, onInputChange, maxLength = 150 }) {
   const [usersCol] = useCollectionData(db.collection('users'));
+
   const users = usersCol?.map(user => ({
     ...user,
     name: user.username
   }))
+
+  const [suggestions, setSugestions] = useState(users);
 
   const editorRef = useRef();
 
