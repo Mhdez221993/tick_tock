@@ -5,7 +5,7 @@ import { useMemo, useRef, useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 export default function DraftEditor({ editorState, setEditorState, onInputChange, maxLength = 150 }) {
-  const [usersCol] = useCollectionData(db.collection('users'));
+  const [usersCol] = useCollectionData(db.collection('users').limit(5));
 
   const users = usersCol?.map(user => ({
     ...user,
