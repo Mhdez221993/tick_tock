@@ -6,6 +6,11 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 
 export default function DraftEditor({ editorState, setEditorState, onInputChange, maxLength = 150 }) {
   const [usersCol] = useCollectionData(db.collection('users'));
+  const users = usersCol?.map(user => ({
+    ...user,
+    name: user.username
+  }))
+
   const editorRef = useRef();
 
   const { plugin, MentionSuggestions } = useMemo(() => {
