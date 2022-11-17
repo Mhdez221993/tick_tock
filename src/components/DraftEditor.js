@@ -12,6 +12,8 @@ export default function DraftEditor({ editorState, setEditorState, onInputChange
     name: user.username
   }))
 
+  const [open, setOpen] = useState(false);
+
   const [suggestions, setSugestions] = useState(users);
 
   const editorRef = useRef();
@@ -37,7 +39,12 @@ export default function DraftEditor({ editorState, setEditorState, onInputChange
               ref={editorRef}
             />
 
-            <MentionSuggestions />
+            <MentionSuggestions
+              entryComponent={Entry}
+              open={open}
+              onOpenChange={open => setOpen(open)}
+              suggestions={suggestions || []}
+            />
           </div>
         </div>
       </div>
