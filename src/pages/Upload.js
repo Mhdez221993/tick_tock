@@ -2,9 +2,11 @@ import DiscardModal from "components/DiscardModal";
 import DraftEditor from "components/DraftEditor";
 import useDiscardModal from "context/discardModalContext";
 import useAuthUser from "context/userContext";
+import { EditorState } from "draft-js";
 import useDragDrop from "hooks/useDragDrop";
 import useFirebaseUpload from "hooks/useFirebaseUpload";
 import UploadCircleIcon from "icons/UploadCircleIcon";
+import { useState } from "react";
 import toast from "react-hot-toast";
 
 export default function Upload() {
@@ -140,15 +142,17 @@ function UploadSelectFile({ handleUpload, isUploading, videoUrl }) {
 
 function UploadForm({ discardUpload }) {
   const { closeDiscard } = useDiscardModal();
+  const [caption, setCaption] = useState({ raw: null, characterLength: 0 });
+  const [editorState, setEditorState] = useState(() => EditorState.createEmpty());
 
-  function onConfirm() {
+  function discardPost() {
     discardUpload();
     closeDiscard();
   }
 
   return (
     <>
-      <DiscardModal onConfirm={onConfirm} />
+      <DiscardModal onConfirm={discardPost} />
 
       <div className="u-form-container">
         <div className="u-form-wrapper">
@@ -160,7 +164,12 @@ function UploadForm({ discardUpload }) {
             className="u-form-length">0 / 150</span></span></div>
 
             <div className="u-form-input">
-              <DraftEditor></DraftEditor>
+              <DraftEditor
+                editorState={editorState}
+                setEditorState={setEditorState}
+                onInputChange={setCaption}
+                maxLength={150}
+              />
             </div>
           </div>
 
