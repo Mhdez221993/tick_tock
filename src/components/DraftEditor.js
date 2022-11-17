@@ -1,5 +1,22 @@
+import { MentionSuggestions } from "@draft-js-plugins/mention";
+import { Editor } from "draft-js";
+
 export default function DraftEditor() {
-  return "drafteditor";
+  return (
+    <div className="editor-container">
+      <div className="editor-wrapper">
+        <div className="editor-inner">
+          <div>
+            <Editor></Editor>
+            <MentionSuggestions></MentionSuggestions>
+          </div>
+        </div>
+      </div>
+      <button className="editor-mention-button"><img src="" alt=""
+      className="editor-mention-icon" /></button><button
+      className="editor-hashtag-button"><img src="" alt=""
+      className="editor-hashtag-icon" /></button></div>
+  );
 }
 
 function Entry(props) {
