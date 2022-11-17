@@ -1,11 +1,11 @@
-import { createMentionPlugin } from "@draft-js-plugins/mention";
+import { createMentionPlugin, defaultSuggestionsFilter } from "@draft-js-plugins/mention";
 import { Editor } from "draft-js";
 import db from "lib/firebase";
 import { useMemo, useRef, useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 export default function DraftEditor({ editorState, setEditorState, onInputChange, maxLength = 150 }) {
-  const [usersCol] = useCollectionData(db.collection('users').limit(5));
+  const [usersCol] = useCollectionData(db.collection('users'));
 
   const users = usersCol?.map(user => ({
     ...user,
@@ -14,9 +14,13 @@ export default function DraftEditor({ editorState, setEditorState, onInputChange
 
   const [open, setOpen] = useState(false);
 
-  const [suggestions, setSugestions] = useState(users);
+  const [suggestions, setSugestions] = useState(users.slice(0, 5));
 
   const editorRef = useRef();
+
+  function onSearchChange({ value }) {
+    setSugestions(defaultSuggestionsFilter(value, users));
+  }
 
   const { plugin, MentionSuggestions } = useMemo(() => {
     const mentionPlugin = createMentionPlugin();
@@ -44,6 +48,7 @@ export default function DraftEditor({ editorState, setEditorState, onInputChange
               open={open}
               onOpenChange={open => setOpen(open)}
               suggestions={suggestions || []}
+              onSearchChange={onSearchChange}
             />
           </div>
         </div>
